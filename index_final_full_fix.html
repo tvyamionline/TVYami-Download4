@@ -1,0 +1,4468 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Favicon -->
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;rect width='100' height='100' rx='20' ry='20' fill='black'/&gt;&lt;text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='60' fill='white'&gt;📺&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="TV Yami offers free streaming of South African, American TV Shows, and Movies. Watch anytime, anywhere." name="description"/>
+<meta content="TV Yami, South African TV, Skeem Saam, Ithonga, Genesis, Xrepo, Movies, Free Streaming, American TV Shows" name="keywords"/>
+<meta content="SxXcwQdqUlWLjt456JwV8YfWjovUXvFl_CIgtUGweD0" name="google-site-verification"/>
+<title>TV Yami – Free SA &amp; US TV Shows + Movies</title>
+<!-- Ads with proper async loading to prevent blocking -->
+<script async="" src="//pl26630947.profitableratecpm.com/91/50/ce/9150ce4b254464961b06ccaa256200ea.js"></script>
+<script async="" src="//pl26640661.profitableratecpm.com/32/da/24/32da24bbb349b1c40dc2190cabe48290.js"></script>
+<style>
+    :root {
+      --primary-color: #FF4500;
+      --secondary-color: #FFD700;
+      --bg-color: #000;
+      --text-color: #fff;
+      --card-bg: #111;
+      --modal-bg: rgba(0, 0, 0, 0.9);
+    }
+
+    [data-theme="light"] {
+      --primary-color: #E74C3C;
+      --secondary-color: #F39C12;
+      --bg-color: #f5f5f5;
+      --text-color: #333;
+      --card-bg: #fff;
+      --modal-bg: rgba(255, 255, 255, 0.95);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      padding: 30px 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: var(--secondary-color);
+      text-shadow: 2px 2px 5px #000;
+      margin-bottom: 10px;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    /* Search Bar */
+    .search-container {
+      max-width: 600px;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 30px;
+      border: 2px solid var(--primary-color);
+      background: var(--card-bg);
+      color: var(--text-color);
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search-btn {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 7px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .search-results {
+      position: absolute;
+      width: 100%;
+      max-height: 300px;
+      overflow-y: auto;
+      background: var(--card-bg);
+      border: 1px solid var(--primary-color);
+      border-radius: 0 0 10px 10px;
+      z-index: 100;
+      display: none;
+      text-align: left;
+    }
+
+    .search-result-item {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #333;
+    }
+
+    .search-result-item:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0 30px;
+      gap: 10px;
+    }
+
+    .category, .subcategory {
+      padding: 10px 18px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .category {
+      background: var(--bg-color);
+      color: var(--primary-color);
+      box-shadow: 0 0 10px var(--primary-color);
+      border: 1px solid var(--primary-color);
+    }
+
+    .category:hover {
+      background: var(--primary-color);
+      color: #000;
+    }
+
+    .subcategory {
+      background: var(--card-bg);
+      color: var(--secondary-color);
+      box-shadow: 0 0 10px var(--secondary-color);
+      border: 1px solid var(--secondary-color);
+    }
+
+    .subcategory:hover {
+      background: var(--secondary-color);
+      color: #111;
+    }
+
+    .watch-now {
+      margin: 25px 0;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 15px var(--primary-color);
+      transition: background 0.3s ease;
+    }
+
+    .watch-now:hover {
+      background: #e03e00;
+    }
+
+    .video-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+
+    .video-container {
+      flex: 1 1 450px;
+      max-width: 480px;
+      cursor: pointer;
+    }
+
+    .video-title {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--secondary-color);
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #000;
+      background-color: var(--card-bg);
+    }
+
+    .section h2 {
+      color: var(--secondary-color);
+      margin-bottom: 15px;
+      font-size: 28px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: block;
+      padding: 12px 20px;
+      background: #222;
+      color: var(--primary-color);
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: all 0.3s;
+      background: var(--bg-color);
+    }
+
+    .links a:hover {
+      background: var(--secondary-color);
+      color: #000;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: rgba(0,0,0,0.85);
+      padding: 25px 20px;
+      color: var(--text-color);
+      font-size: 15px;
+      line-height: 1.6;
+      border-top: 1px solid #444;
+      background: var(--card-bg);
+    }
+
+    footer strong {
+      color: var(--primary-color);
+    }
+
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .links {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    /* Thumbnail styles */
+    .thumbnail-container {
+      position: relative;
+      width: 100%;
+      height: 270px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #444;
+      transition: transform 0.3s;
+    }
+    
+    .thumbnail-container:hover {
+      transform: scale(1.02);
+    }
+    
+    .thumbnail-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background-color: rgba(255, 69, 0, 0.8);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .play-button:hover {
+      background-color: rgba(255, 69, 0, 1);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    
+    .play-button::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 25px solid white;
+      margin-left: 5px;
+    }
+    
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--modal-bg);
+      overflow: auto;
+    }
+    
+    .modal-content {
+      position: relative;
+      margin: 5% auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 900px;
+    }
+    
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: var(--primary-color);
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    
+    .close:hover {
+      color: var(--secondary-color);
+    }
+    
+    .modal-video {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+    }
+    
+    /* Carousel styles */
+    .carousel {
+      position: relative;
+      max-width: 1000px;
+      margin: 30px auto;
+      overflow: hidden;
+    }
+    
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
+    .carousel-item {
+      min-width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    
+    .carousel-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 69, 0, 0.7);
+      color: white;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 20px;
+      z-index: 10;
+    }
+    
+    .carousel-control.prev {
+      left: 10px;
+    }
+    
+    .carousel-control.next {
+      right: 10px;
+    }
+    
+    .carousel-control:hover {
+      background-color: rgba(255, 69, 0, 1);
+    }
+
+    /* Content preview styles */
+    .content-preview {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+    
+    .preview-item {
+      width: 180px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    
+    .preview-item:hover {
+      transform: scale(1.05);
+    }
+    
+    .preview-thumbnail {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #444;
+    }
+    
+    .preview-title {
+      margin-top: 8px;
+      font-size: 16px;
+      color: var(--secondary-color);
+    }
+
+    /* Social Ad Styling */
+    .social-ad {
+      background: var(--card-bg);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 600px;
+      border: 1px solid var(--primary-color);
+    }
+
+    /* Next Video Button */
+    .next-video-btn {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .next-video-btn:hover {
+      background: #e03e00;
+    }
+
+    /* Loading spinner */
+    .spinner {
+      display: none;
+      width: 40px;
+      height: 40px;
+      margin: 20px auto;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top: 4px solid var(--primary-color);
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Ad container styling */
+    .ad-container {
+      margin: 20px 0;
+      min-height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255,255,255,0.05);
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    /* Pagination styles */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    .page-btn {
+      padding: 8px 15px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .page-btn:hover {
+      background: #e03e00;
+    }
+
+    .page-btn.active {
+      background: var(--secondary-color);
+      color: #000;
+    }
+
+    /* Responsive grid for movies */
+    .movies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .movie-item {
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .movie-item:hover {
+      transform: scale(1.03);
+    }
+
+    .movie-thumbnail {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #444;
+    }
+
+    .movie-title {
+      margin-top: 8px;
+      font-size: 14px;
+      color: var(--secondary-color);
+      text-align: center;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+      .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+      
+      .preview-item {
+        width: 150px;
+      }
+      
+      .preview-thumbnail {
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+      
+      .preview-item {
+        width: 100%;
+      }
+    }
+
+    /* All videos section */
+    .all-videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .all-videos-item {
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .all-videos-item:hover {
+      transform: scale(1.03);
+    }
+
+    /* Episode item styling */
+    .episode-item {
+      padding: 10px;
+      background: var(--card-bg);
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .episode-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: var(--secondary-color);
+    }
+
+    .watch-episode-btn {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .watch-episode-btn:hover {
+      background: #e03e00;
+    }
+  </style>
+</head>
+<body>
+<!-- Theme Toggle Button -->
+<button class="theme-toggle" id="themeToggle">🌓</button>
+<!-- Top Ad Position with fallback -->
+<div class="ad-container">
+<script async="" data-cfasync="false" src="//pl26633526.profitableratecpm.com/9e1b86bea911dbaea20ee820fbf00236/invoke.js"></script>
+<div id="container-9e1b86bea911dbaea20ee820fbf00236"></div>
+<div class="ad-fallback" style="display:none;">
+<p>Advertisement</p>
+</div>
+</div>
+<h1>TV Yami</h1>
+<!-- Search Bar with Results Dropdown -->
+<div class="search-container">
+<input autocomplete="off" class="search-bar" id="searchInput" placeholder="Search movies, TV shows..." type="text"/>
+<button class="search-btn" onclick="searchContent()">Search</button>
+<div class="search-results" id="searchResults"></div>
+</div>
+<div class="categories">
+<a class="category" href="https://tvyami.blogspot.com/search/label/South%20African%20TV%20Shows?&amp;max-results=6" target="_blank">South African TV Shows</a>
+<a class="subcategory" href="https://tvyami.blogspot.com/search/label/xrepo?&amp;max-results=6" target="_blank">Xrepo</a>
+<a class="subcategory" href="https://tvyami.blogspot.com/search/label/ithonga?&amp;max-results=6" target="_blank">Ithonga</a>
+<a class="category" href="https://tvyami.blogspot.com/search/label/Documentaries?&amp;max-results=6" target="_blank">Documentaries</a>
+<a class="category" href="https://tvyami.blogspot.com/search/label/Comedy?&amp;max-results=6" target="_blank">Comedy</a>
+</div>
+<button class="watch-now" onclick="window.open('https://tvyami.blogspot.com/', '_blank')">🎬 Watch Now</button>
+<button class="watch-now" onclick="showAllVideos()">📺 Show All Videos (A-Z)</button>
+<div id="allVideosSection" style="display:none;">
+<h2 style="color: #FFD700; text-shadow: 1px 1px 3px #000;">All Videos (A-Z)</h2>
+<div class="all-videos-grid" id="allVideosContainer"></div>
+</div>
+<!-- Google Drive Videos Section (Now First) -->
+<div class="section">
+<h2>Featured Movies</h2>
+<div class="video-section">
+<div class="video-container" onclick="openModal('https://drive.google.com/file/d/1dTaQmZm-4VXGnZIHEsCKAJoZxqe9iHob/preview', 'The Fast and the Furious (2001)')">
+<div class="video-title">The Fast and the Furious (2001)</div>
+<div class="thumbnail-container">
+<img alt="The Fast and the Furious (2001)" src="https://ntvb.tmsimg.com/assets/p27779_v_h10_bb.jpg?w=960&amp;h=540"/>
+</div>
+<a class="watch-now" download="" href="https://drive.google.com/uc?export=download&amp;id=1dTaQmZm-4VXGnZIHEsCKAJoZxqe9iHob">⬇️ Download "The Fast and the Furious (2001)"</a>
+</div>
+<div class="video-container" onclick="openModal('https://drive.google.com/file/d/1Q3dwdHbwJS1_GipIWBPBDc9vMmFecU3t/preview', 'Sinners (2025)')">
+<div class="video-title">Sinners (2025)</div>
+<div class="thumbnail-container">
+<img alt="Sinners (2025)" src="https://img.megaplextheatres.com/FilmBackdrop/HO00003588"/>
+</div>
+<a class="watch-now" download="" href="https://drive.google.com/uc?export=download&amp;id=1Q3dwdHbwJS1_GipIWBPBDc9vMmFecU3t">⬇️ Download "Sinners (2025)"</a>
+</div>
+</div>
+</div>
+<!-- Mid Ad Position -->
+
+<!-- YouTube Videos Carousel -->
+
+<!-- TV Series Section -->
+
+<div class="section" style="text-align: center;">
+<h2>More Movies on YouTube</h2>
+<p>Click below to visit and subscribe to our YouTube channel:</p>
+<a class="watch-now" href="https://youtube.com/@tvyami3?si=hMRpM3uzX7PQ_jjs" target="_blank">📺 Visit TV Yami YouTube Channel</a>
+</div>
+<div class="section">
+<h2>TV Series</h2>
+<div class="content-preview" id="seriesContainer"></div>
+<div class="pagination" id="seriesPagination"></div>
+<!-- Seasons Modal -->
+<div class="modal" id="seasonsModal">
+<div class="modal-content" style="max-width: 800px;">
+<span class="close" onclick="closeSeasonsModal()">×</span>
+<h2 id="seriesTitle" style="color: var(--secondary-color);"></h2>
+<div class="categories" id="seasonsContainer"></div>
+</div>
+</div>
+<!-- Episodes Modal -->
+<div class="modal" id="episodesModal">
+<div class="modal-content" style="max-width: 800px;">
+<span class="close" onclick="closeEpisodesModal()">×</span>
+<h2 id="seasonTitle" style="color: var(--secondary-color);"></h2>
+<div class="links" id="episodesContainer" style="grid-template-columns: 1fr;"></div>
+</div>
+</div>
+</div>
+<!-- TV Yami Movies Section with Pagination -->
+<div class="section">
+<h2>TV Yami Movies</h2>
+<div class="movies-grid" id="moviesContainer"></div>
+<div class="pagination" id="pagination"></div>
+</div>
+<div class="section">
+<h2>Why TV Yami?</h2>
+<p>TV Yami brings you the hottest Movies and binge-worthy TV Shows from around the world. From explosive action to heartwarming drama, there's something here for every mood. Stay tuned and never miss a moment of entertainment!</p>
+<p>With our extensive collection of South African and American content, TV Yami is your premier destination for free streaming. Our platform is constantly updated with the latest releases and classic favorites, ensuring you always have something great to watch.</p>
+<p>Whether you're looking for the latest blockbusters, trending TV series, or hidden gems, TV Yami has you covered. Our user-friendly interface makes it easy to find exactly what you're looking for, with powerful search functionality and organized categories.</p>
+</div>
+<!-- Bottom Ad Position -->
+<div class="ad-container">
+<script src="//pl26640661.profitableratecpm.com/32/da/24/32da24bbb349b1c40dc2190cabe48290.js" type="text/javascript"></script>
+</div>
+<!-- Video Modal -->
+<div class="modal" id="videoModal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">×</span>
+<iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" class="modal-video" id="modalVideo"></iframe>
+<button class="next-video-btn" onclick="playNextVideo()">Next Video ▶</button>
+<div id="currentVideoTitle" style="color: var(--secondary-color); margin-top: 10px; font-weight: bold;"></div>
+</div>
+</div>
+<footer>
+<strong>Make a request:</strong><br/>
+    Is there a movie or TV show you want to watch on our website?<br/>
+    Let us know by leaving a comment or sending a DM:<br/>
+<strong>IG:</strong> @tvyami_sa<br/>
+<strong>Youtube:</strong> @tvyami2<br/>
+<strong>TikTok:</strong> @tvyami2<br/><br/>
+<strong>Are you a business owner?</strong><br/>
+    Advertise with us to reach more people. Send us a DM:<br/>
+<strong>IG:</strong> @tvyami_sa<br/>
+<strong>Youtube:</strong> @tvyami2<br/>
+<strong>TikTok:</strong> @tvyami2<br/><br/>
+
+    All content is hosted by third-party services
+    
+    © 2025 TV Yami All rights reserved.
+  </footer>
+<script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.setAttribute('data-theme', 
+        document.body.getAttribute('data-theme') === 'light' ? '' : 'light');
+    });
+
+       // TV Series Database
+    const seriesDatabase = {
+      "godfather": {
+        title: "Godfather of Harlem",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTg4MWVjMjYtZGZhYS00MzlmLWFiYmItNDc1OGNmMzczZTM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        description: "The story of crime boss Bumpy Johnson, who in the early 1960s returned from prison to find his neighborhood controlled by the Italian mob.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "By Whatever Means Necessary",
+                url: "https://drive.google.com/file/d/1-BpocyAC0C3lIH9y8caPaXil3-0RpzZj/uc?export=download"
+              },
+              "2": {
+                title: "The Nitty Gritty",
+                url: "https://drive.google.com/file/d/1WlEEUTNxu07wbd_zcHAWtriXowYkcjmu/uc?export=download"
+              },
+              "3": {
+                title: "Chickens Come Home to Roost",
+                url: "https://drive.google.com/file/d/1WjDrYsNSVc3XSFVyoYoaITt-ITt_wsLg/uc?export=download"
+              },
+              "4": {
+                title: "I Am the Greatest",
+                url: "https://drive.google.com/file/d/10ZGe595c1D0hvu7jMaIG6bZPGq-t8pT7/uc?export=download"
+              },
+              "5": {
+                title: "It's All in the Game",
+                url: "https://drive.google.com/file/d/1leJsev0LaTk2VfNgDmSJbc9EiQhsEG0h/uc?export=download"
+              },
+              "6": {
+                title: "Il Canto de Malavita",
+                url: "https://drive.google.com/file/d/1Y7OBU8jj32SMW8Y1SV2v5xNXjfOCNCLc/uc?export=download"
+              },
+              "7": {
+                title: "Masters of War",
+                url: "https://drive.google.com/file/d/1KjM2oLRLzI8dMD81KZy-rvfha48GW1B7/uc?export=download"
+              },
+              "8": {
+                title: "How I Got Over",
+                url: "https://drive.google.com/file/d/1620LHXaF5yzP2Gmg4O_dwBWMcMYXlfur/uc?export=download"
+              },
+              "9": {
+                title: "Rent Strike Blues",
+                url: "https://drive.google.com/file/d/1zG0Wty-US1N4HsV8AhwQdk6Q90biwrU1/uc?export=download"
+              },
+              "10": {
+                title: "Chickens Come Home to Roost",
+                url: "https://drive.google.com/file/d/1mJqH9mXPPDMFc1xvKoi5c3FaxtahzWyh/uc?export=download"
+              }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "The Godfather of Harlem Returns",
+                url: "https://drive.google.com/file/d/1examplelink11/uc?export=download"
+              },
+              "2": {
+                title: "The Sit Down",
+                url: "https://drive.google.com/file/d/1examplelink12/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "ginny": {
+        title: "Ginny & Georgia",
+        poster: "https://m.media-amazon.com/images/M/MV5BNGY4NjYzYTYtMDhjYy00MmQ2LTkwNDktNzUxMGNkMDI5MmZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        description: "Free-spirited Georgia and her two kids, Ginny and Austin, move north in search of a fresh start but find that the road to new beginnings can be bumpy.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Pilot",
+                url: "https://drive.google.com/file/d/1zMDL4-MmhUh2QCCtl9ODxPfgY19XLMYn/uc?export=download"
+              },
+              "2": {
+                title: "It's a Face Not a Mask",
+                url: "https://drive.google.com/file/d/16n45IF7CEZLvHPkKb6b6Qd5Af-E3u-WY/uc?export=download"
+              },
+              "3": {
+                title: "Next Level Rich People Sh*t",
+                url: "https://drive.google.com/file/d/1LCO7KRuQOm6Rpt6FAAwSL7323bczrteM/uc?export=download"
+              },
+              "4": {
+                title: "Boyfriend, Girlfriend",
+                url: "https://drive.google.com/file/d/1MFlaAAB6VQRo6sl7u9pheH33JJ_zhXz4/uc?export=download"
+              },
+              "5": {
+                title: "It's Not a Party, It's an Experience",
+                url: "https://drive.google.com/file/d/1-nU5_VvcnfgL3H2GjrHQx276ykMcj_-8/uc?export=download"
+              },
+              "6": {
+                title: "I'm Triggered",
+                url: "https://drive.google.com/file/d/1XZkvmDq9LcUJY_pU00fs4pWp4iom18gl/uc?export=download"
+              },
+              "7": {
+                title: "Happy Sweet Sixteen, Jerk",
+                url: "https://drive.google.com/file/d/1JZziwYCh1X_EdSUM1JVtqcXh_zfnkpgT/uc?export=download"
+              },
+              "8": {
+                title: "Check One, Check Other",
+                url: "https://drive.google.com/file/d/1I49MgfKeS807bToIoRjQLxlarc-6t1n8/uc?export=download"
+              },
+              "9": {
+                title: "Feelings Are Hard",
+                url: "https://drive.google.com/file/d/14RTkstyQS2TR4iQ9RnszxCkrjX3AdJ7U/uc?export=download"
+              },
+              "10": {
+                title: "The Worst Betrayal Since Jordyn and Kylie",
+                url: "https://drive.google.com/file/d/1nZc3RNjhDt6sAvmBt2p_uaBsYc5vqR9p/uc?export=download"
+              }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "Welcome Back, Bitches!",
+                url: "https://drive.google.com/file/d/1SlgVHobOMmg5yDLwHyflyhJFXrapVsDU/uc?export=download"
+              },
+              "2": {
+                title: "Why Does Everything Have to Be So Hard?",
+                url: "https://drive.google.com/file/d/1zb2E9SjU_Gv4c1AjeUwxT6ShPA--CjxT/uc?export=download"
+              },
+              "3": {
+                title: "What Are You Playing At, Georgia?",
+                url: "https://drive.google.com/file/d/19XfI623cIfZQ5qL6kpWFYDp8MZFL4Jws/uc?export=download"
+              },
+              "4": {
+                title: "Happy My Birthday To You",
+                url: "https://drive.google.com/file/d/1OBSU3pVicDgqYHw_63pMLObyCq584pSz/uc?export=download"
+              },
+              "5": {
+                title: "Latkes Are Lit",
+                url: "https://drive.google.com/file/d/1imHYJXjqCpHD4au-ivtCMFWITXJ9lHTT/uc?export=download"
+              },
+              "6": {
+                title: "A Very Merry Ginny & Georgia",
+                url: "https://drive.google.com/file/d/1ttghE5d8Ig5YF3TpiMxs8QrpVKFnBea9/uc?export=download"
+              },
+              "7": {
+                title: "We're Going To Serenade The Hell Out of You",
+                url: "https://drive.google.com/file/d/1MDipVijWbC2B8B1XLc8JlVL0qQX_oU7D/uc?export=download"
+              },
+              "8": {
+                title: "Hark! Darkness Descends!",
+                url: "https://drive.google.com/file/d/1mTEzbnNFP82l6YueTBmFdEx-puWgdGhT/uc?export=download"
+              },
+              "9": {
+                title: "Kill Gill",
+                url: "https://drive.google.com/file/d/119MnTNMMrp5q6CK5F6biYxT5eykYq8mT/uc?export=download"
+              },
+              "10": {
+                title: "I'm No Cinderella",
+                url: "https://drive.google.com/file/d/1pl9hdTYN4G4IIm4ohYloSGeYtn1PD6RZ/uc?export=download"
+              }
+            }
+          },
+          "3": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1Gyc8Gxd3HXe2PWVdaWxSG-6PWkvceLRw/uc?export=download"
+              },
+              "2": {
+                title: "Episode 2",
+                url: "https://drive.google.com/file/d/1kuhl4OniF9NVbCrheLGdHfkSnhHMIjr9/uc?export=download"
+              },
+              "3": {
+                title: "Episode 3",
+                url: "https://drive.google.com/file/d/16LF-g12qJ0gNsTWAV7-fN6-H4qlKV0RY/uc?export=download"
+              },
+              "4": {
+                title: "Episode 4",
+                url: "https://drive.google.com/file/d/1Da7bPYoAhqIxqcOEAy9LkoM7qcdGuiFV/uc?export=download"
+              },
+              "5": {
+                title: "Episode 5",
+                url: "https://drive.google.com/file/d/1Pkt30hr_hLxIMlbGSGws_kf0msDr_LWT/uc?export=download"
+              },
+              "6": {
+                title: "Episode 6",
+                url: "https://drive.google.com/file/d/1ThYzrA7FH-QlQgU0VpWTwn8q2D13ivd_/uc?export=download"
+              },
+              "7": {
+                title: "Episode 7",
+                url: "https://drive.google.com/file/d/1TidfvrfvyPA8fJf9mYrsBeSQHqD2BNR3/uc?export=download"
+              },
+              "8": {
+                title: "Episode 8",
+                url: "https://drive.google.com/file/d/1cey2uMbRshO6zgwRVnwF2omd2cwFke4B/uc?export=download"
+              },
+              "9": {
+                title: "Episode 9",
+                url: "https://drive.google.com/file/d/18AFxpJRf36EgFwsLSFDZdqp0GrQh0bXg/uc?export=download"
+              },
+              "10": {
+                title: "Episode 10",
+                url: "https://drive.google.com/file/d/19ITil8W_N4v_SBuOINIUBbxogMG5pceZ/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "interviewwiththevampire": {
+        title: "Interview with the Vampire",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-PI5DwT4ZnpqepZwvlss-AkGr21EIK9ffg&s",
+        description: "A vampire tells his epic story of love, blood, and the perils of immortality to a journalist.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1 - In Throes of…",
+                url: "https://drive.google.com/file/d/14M-bUalg86IYMiz8UCCwzg6lzJQEATgs/uc?export=download"
+              },
+              "2": {
+                title: "Episode 2 - ...After the…",
+                url: "https://drive.google.com/file/d/1g23pdSE7BzxjOJYILWlEpBX7wO4zIY8z/uc?export=download"
+              },
+              "3": {
+                title: "Episode 3- Is My Very Na…",
+                url: "https://drive.google.com/file/d/1lyiniCuSib1eSt_gn-EIqiAiYRozDj0z/uc?export=download"
+              },
+              "4": {
+                title: "Episode 4- ...The Ruthle…",
+                url: "https://drive.google.com/file/d/1dWx1ShGxtIQzKuN-BDaKOTLKCrrp2iIE/uc?export=download"
+              },
+              "5": {
+                title: "Episode 5 - A Vile Hung…",
+                url: "https://drive.google.com/file/d/1ekCa6CFy5_JCqNLq6tfn7M_-eThq7RPw/uc?export=download"
+              },
+              "6": {
+                title: "-Episode 6 Like Angels P…",
+                url: "https://drive.google.com/file/d/1oeV8pwcGRRWIDWJYxLnNOkMI3S9aoIqI/uc?export=download"
+              },
+              "7": {
+                title: "Episode 7 - The Thing Lay…",
+                url: "https://drive.google.com/file/d/1WtpFUjuMUaJ2oKS127zj9xX-W7D80vZJ/uc?export=download"
+               }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1-4bHiZSkDI11VG8BcfAnqKyFxtpnDQFr/uc?export=download"
+              },
+              "2": {
+                title: "Do You Know W…",
+                url: "https://drive.google.com/file/d/1MdL7sBucDeO2_7zs962FtO6TNnbJ58Su/uc?export=download"
+              },
+              "3": {
+                title: "...",
+                url: "https://drive.google.com/file/d/10ZXgkHkfKBcjQ_BqxoJ1qU-sJER3ebXN/uc?export=download"
+              },
+              "4": {
+                title: "I Want You Mo…",
+                url: "https://drive.google.com/file/d/1AOCdc05ZhOIK7sWs54oFBZm4YDOxod4e/uc?export=download"
+              },
+              "5": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1I8Kh_WLVpliHEKYYY7NMibp-XHg-p0fu/uc?export=download"
+              },
+              "6": {
+                title: "Like the Ligh…",
+                url: "https://drive.google.com/file/d/1f09p-XosKbVXKT6kXRQn-9svREdF0P5C/uc?export=download"
+              },
+              "7": {
+                title: "I Could Not P…",
+                url: "https://drive.google.com/file/d/1RyT0x3G-A0Tb6gAk27nyeZ1uNm1X_7Sd/uc?export=download"
+              },
+              "8": {
+                title: "And That's th…",
+                url: "https://drive.google.com/file/d/1HzgN5VTk-9zg1n5uk5_3ookyH4tduHKS/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+            "walkingdead": {
+        title: "The Walking Dead",
+        poster: "https://upload.wikimedia.org/wikipedia/en/0/0e/TheWalkingDeadPoster.jpg",
+        description: "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group of survivors to stay alive.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Days Gone Bye",
+                url: "https://drive.google.com/file/d/1JeaX2pW7ey4uXJvukSSpSjaoLpzl8j4Z/uc?export=download"
+              },
+              "2": {
+                title: "Guts",
+                url: "https://drive.google.com/file/d/19gsV8OTz-1i0eypsEb3Xeme8wKI2Lful/uc?export=download"
+              },
+              "3": {
+                title: "Tell It to the Frogs",
+                url: "https://drive.google.com/file/d/1-Bl-VarKgUBsrXLGd8nKt83JqPcbgmf0/uc?export=download"
+              },
+              "4": {
+                title: "Vatos",
+                url: "https://drive.google.com/file/d/1ol4FgjqUPKrGuhPeCGsFMRp98gSfUO74/uc?export=download"
+              },
+              "5": {
+                title: "Wildfire",
+                url: "https://drive.google.com/file/d/1Yzl25VqK5s1njkuZ00RgrvqScuAA0qk4/uc?export=download"
+              },
+              "6": {
+                title: "TS-19",
+                url: "https://drive.google.com/file/d/1flaiF6obEjIzcuyNmEYU1v1ts7SEEFXg/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "thesandman": {
+        title: "The sandman",
+        poster: "https://m.media-amazon.com/images/M/MV5BNjk0M2ZhZTQtZjQ0NC00ODA2LWFkN2ItMTA0ZTc0MjJjODg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        description: "....",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1C1mjotCnHPFb1zikP6lYJvmBzxNMEc4c/uc?export=download"
+              },
+              "2": {
+                title: "Imperfect Hosts",
+                url: "https://drive.google.com/file/d/1ILe6dIx2SV8ReSiZhGpiyuBXUaccMQDT/uc?export=download"
+              },
+              "3": {
+                title: "Dream a Little Dream of Me.m…",
+                url: "https://drive.google.com/file/d/1KV8TxTnT7C4pzENm7ub6UNOkr3C4hyIC/uc?export=download"
+              },
+              "4": {
+                title: "A Hope in Hell",
+                url: "https://drive.google.com/file/d/1iFojat-FYsYU0b_DV8mCRzyXMjsSmzWr/uc?export=download"
+              },
+              "5": {
+                title: "247",
+                url: "https://drive.google.com/file/d/1WINyCaMK6x6ueT_LH1S1EC2vlkszQSMJ/uc?export=download"
+              },
+              "6": {
+                title: "The Sound of Her Wings",
+                url: "https://drive.google.com/file/d/1Mary2TqoxrAOTZcMNi3gU9w4priomXoV/uc?export=download"
+              },
+              "7": {
+                title: "The Doll's House",
+                url: "https://drive.google.com/file/d/1cmqTC07x765kTMLR2Jvmq9CrJaJJdMK3/uc?export=download"
+              },
+              "8": {
+                title: "Playing House",
+                url: "https://drive.google.com/file/d/16jrTz-xszVauFtZ-PcBpgHRpO2SWYOpU/uc?export=download"
+              },
+              "9": {
+                title: "Collectors",
+                url: "https://drive.google.com/file/d/1svzgnKmDR4rZ8Ddziplm3nDhS2uNQZaL/uc?export=download"
+              },
+              "10": {
+                title: "Lost Hearts",
+                url: "https://drive.google.com/file/d/1qddig9X5dhq-S7BwFJSQ0t643YpnyE7G/uc?export=download"
+              },
+              "00": {
+                title: "Dream Of A Thousand Cats Calli…",
+                url: "https://drive.google.com/file/d/1ZOePv5nuBtnVOwHq9-IACPkkg4iUyR6q/uc?export=download"
+              }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "....",
+                url: "https://drive.google.com/file/d/1ZOePv5nuBtnVOwHq9-IACPkkg4iUyR6q/uc?export=download"
+               }
+            }
+          }
+        }
+      },    
+      "squidgame": {
+        title: "Squid game",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLORuCJT1fhsS6g4MHEe3UNxk-aJz0Q-qkg&s",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1cO6P6SmLpqyhT9uuQLjW8tTkW0oET03l/uc?export=download"
+              },
+              "2": {
+                title: "Episode 2",
+                url: "https://drive.google.com/file/d/1MlSNEGa-DDYT8dw9OEJGAKqetquTetbD/uc?export=download"
+              },
+              "3": {
+                title: "The Man with the Umbrella",
+                url: "https://drive.google.com/file/d/1UgxlO4g9TpPJRLnbS4qM6fkjMDx2845i/uc?export=download"
+              },
+              "4": {
+                title: "Stick to the Team",
+                url: "https://drive.google.com/file/d/1t2U9fXbtFabirYH2CNUf3vvsS7vTfkTJ/uc?export=download"
+              },
+              "5": {
+                title: "A Fair World",
+                url: "https://drive.google.com/file/d/1FhKzcJw90FY7D0-NBYKktwcX0jbI2UGS/uc?export=download"
+              },
+              "6": {
+                title: "Gganbu",
+                url: "https://drive.google.com/file/d/1eMvmduT6vAk462_N6vvYAE7pVgmsAh7u/uc?export=download"
+              },
+              "7": {
+                title: "VIPS",
+                url: "https://drive.google.com/file/d/1pLNcs7JWiWDvzO6I3oPYE3rYXd9ONszS/uc?export=download"
+              },
+              "8": {
+                title: "Front Man",
+                url: "https://drive.google.com/file/d/1Ran-aUySGhg81Vl9IV3eecMFyeRpiYpz/uc?export=download"
+              },
+              "9": {
+                title: "One Lucky Day",
+                url: "https://drive.google.com/file/d/1i6rNx-TjhMfMlrSKYBrCtYp2HNVTxtJj/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+        "Shaka iLembe": {
+        title: "Shaka iLembe",
+        poster: "https://m.media-amazon.com/images/M/MV5BOGU5Mjg4MjItMTAwNC00MDQwLWIwNjMtNjUyMjg1NjFkNzg1XkEyXkFqcGc@._V1_.jpg",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1X1hb1QkKYjgb4Wp8GnITNzeJbtPcMDR8/uc?export=download"
+             },
+              "2": {
+                title: "...",
+                url: "https://drive.google.com/file/d/16EdXQqvjIbyPVX_TNiJVus9DpYqtVr15/uc?export=download"
+              },
+              "3": {
+                title: "...",
+                url: "https://drive.google.com/file/d/11CjuhRyPdKTlNQ57pu09LzwCX5v-PnVq/uc?export=download"
+              },
+              "4": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1Ae_0TDQ77UA1FjzZGHES1mzrbs6ZE4rl/uc?export=download"
+              },
+              "5": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1a40uoBg0WVKQO7D9327tbzmswfcfc-mq/uc?export=download"
+              }, 
+              "6": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1sGtJbGfLsCSQd5YkinEXfNoy8r3mYbiP/uc?export=download"
+              },
+               "7": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1AVAZaez0tnPrIkrCFaH0_0I0-lIABoSu/uc?export=download"
+              },
+              "8": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1ZcfFFcYfYZfvC-CTgIMTd_bmIkT7IHgF/uc?export=download"
+              },
+              "9": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1j3QJpRyQ3naxaD0e-BeOUaCW-xPyWqya/uc?export=download"
+              },
+              "10": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1WgReVs5GYFJhSLY6DHERzCS0b-RnZw1g/uc?export=download"
+              },
+              "11": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1vo6nv6DNKbBU8mDumV5XsbyZhFAFNGT0/uc?export=download"
+              },
+              "12": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1wF3NbYA3OAf04Wd_jJq9dkXhO9KB7uvz/uc?export=download"
+              }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1HF2cGzZsRfEI9B_KZrvs-2JK9VX_EGbH/uc?export=download"
+              },
+              "2": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1zNloZ-18GsGzINiG64E-QDNWDrdjo-SC/uc?export=download"
+              },
+              "3": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1eUriDXlo78mNdTvURsJo8aGbLIqTpjV1/uc?export=download"
+              },
+              "4": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1wuVd06DFQgDD3VloXP1_wB_yhhE2S5x4/uc?export=download"
+              }
+            }
+          }
+        }
+      },  
+        "Breaking Bad": {
+        title: "Breaking Bad",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AUQ1ap545wJq1Op_9GPLFAV15boesLoyZA&s",
+        description: "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Pilot",
+                url: "https://drive.google.com/file/d/1epKsi7f3s-AhyJuKEfceNKlM9IbLLVlK/uc?export=download"
+              },
+              "2": {
+                title: "Cat's in the Bag...",
+                url: "https://drive.google.com/file/d/1yo3HrL-YxK2aY6lBF6tE4jp4tsbpbS72/uc?export=download"
+              },
+              "3": {
+                title: "...And the Bag's in the Riv…",
+                url: "https://drive.google.com/file/d/1_r1m-wQglPbOTtkcCTdQyW1hpB8hyWDa/uc?export=download"
+              },
+              "4": {
+                title: "Cancer Man",
+                url: "https://drive.google.com/file/d/1LzBjmxcPpANwhJWeB3V3X-VWg8M48Bry/uc?export=download"
+              },
+              "5": {
+                title: "Gray Matter",
+                url: "https://drive.google.com/file/d/15q_iykxjBP76xn0deUJ3XAEDa1-j0aae/uc?export=download"
+              },
+              "6": {
+                title: "Crazy Handful of Nothin'",
+                url: "https://drive.google.com/file/d/1gzKOHlyF5GilS6uq3u22eUtpM7tPkKei/uc?export=download"
+              },
+              "7": {
+                title: "A No-Rough-Stuff-Type Deal.…",
+                url: "https://drive.google.com/file/d/1mMHKAlYoV82JOTAhR0drKpNaSvj4gnes/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "forever": {
+        title: "Forever",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU8WRbEPmwnjSYjzjkeOcGt4gUpeXnDlqh4A&s",
+        description: "A married couple, June and Oscar, live a comfortable but predictable life in suburban Riverside, California.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1YhVpBsJIgjdRAvCLWucLZ41TEFVIatd2/uc?export=download"
+              },
+              "2": {
+                title: "Episode 2",
+                url: "https://drive.google.com/file/d/1uSPD4hNvlArmnAM0vJvv3_PkQ7eHLZtR/uc?export=download"
+              },
+              "3": {
+                title: "Episode 3",
+                url: "https://drive.google.com/file/d/1YBtocPELs0x3bOPQOC8fTYqnwrWErFra/uc?export=download"
+              },
+              "4": {
+                title: "Episode 4",
+                url: "https://drive.google.com/file/d/1TEH2DZg1YFbsOV-q8JcoTBQO__Aw2gSJ/uc?export=download"
+              },
+              "5": {
+                title: "The Vineyard",
+                url: "https://drive.google.com/file/d/1i6HQbzPGYR_jwHKIEDocHmWNE_OS339X/uc?export=download"
+              },
+              "6": {
+                title: "The Honeymoon",
+                url: "https://drive.google.com/file/d/1bI-_CYBnpt-YPl7H_grFBmbW0dWySjY-/uc?export=download"
+              },
+              "7": {
+                title: "Deep End",
+                url: "https://drive.google.com/file/d/1w1qciwc9jBYsvqZPnTlGZ0wDRzamZryz/uc?export=download"
+              },
+              "8": {
+                title: "Forever",
+                url: "https://drive.google.com/file/d/1y1Z6t8oZwQ9UyLRQpl3A9upwOAKXSnio/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "Iron heart": {
+        title: "Iron heart",
+        poster: "https://m.media-amazon.com/images/M/MV5BN2EzMGZhOTktYjVhZi00NmIwLWIxZDEtNWUxZTQyNjhkYWQ4XkEyXkFqcGc@._V1_.jpg",
+        description: "Ironheart is an American television miniseries created by Chinaka Hodge for the streaming service Disney+, based on Marvel Comics featuring the character of the same name. ",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1U0TA0bSfYSnkyyyO4Qq4lNB8DsIYEvSo/uc?export=download"
+              },
+              "2": {
+                title: "Episode 2",
+                url: "https://drive.google.com/file/d/1zvZ5PDrTVnegRNIsDwEUItyFqARWCMLs/uc?export=download"
+              },
+              "3": {
+                title: "Episode 3",
+                url: "https://drive.google.com/file/d/1shIRGBmeJW6l5fbs5zRWSqMs1Dv8DvDZ/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "loveisland": {
+        title: "Love Island",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmVzuK9O8YJiVY4UACO0CF1gmN_24LGa4TLQ&s",
+        description: "Singles must couple up in a luxury villa to win a cash prize, but must stay together to survive public votes and dramatic twists.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1va01lm5ZZKzKdFZOioGXWWlx-JodaPnv/uc?export=download"
+              },
+              "2": {
+                title: "Episode 2",
+                url: "https://drive.google.com/file/d/1TIA1OgbiPT4rjEEQYVTHAT1xPQP7bUbH/uc?export=download"
+              },
+              "3": {
+                title: "Episode 3",
+                url: "https://drive.google.com/file/d/1PO6-vGHcL3chyoVfkNQzcFufjnV5Tuhf/uc?export=download"
+              },
+              "4": {
+                title: "Episode 4",
+                url: "https://drive.google.com/file/d/1G2vK92F1IiXrBfV2_aYi7LCzrIQnAjR_/uc?export=download"
+              },
+              "5": {
+                title: "Episode 5",
+                url: "https://drive.google.com/file/d/1wrmyohdYxt6e_86yjy4WehNf9gJs0f0r/uc?export=download"
+              },
+              "7": {
+                title: "Episode 7",
+                url: "https://drive.google.com/file/d/1kBUxyO5S7ptop7uv9ASk90rVmDV52Zv2/uc?export=download"
+              },
+              "8": {
+                title: "Episode 8",
+                url: "https://drive.google.com/file/d/1WTKHQLbrkQ5Y3g-n2J6DYbMBxJGnqyfB/uc?export=download"
+              },
+              "9": {
+                title: "Episode 9",
+                url: "https://drive.google.com/file/d/1uX_lIKDtwgx_kh8w8kS1eytKwWVKSa0P/uc?export=download"
+              },
+              "10": {
+                title: "Episode 10",
+                url: "https://drive.google.com/file/d/1eszw9iAxz5O44KqyKNy75UopMahLKq7W/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "queencharlotte": {
+        title: "Queen Charlotte: A Bridgerton Story",
+        poster: "https://resizing.flixster.com/Dk-jUACH2uWCI-PEEIctYnZ_rT0=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vZTNhZmYyMGMtN2EyYy00MzIwLWFhYzAtMjEyZTYwNmNmOTkyLmpwZw==",
+        description: "The story of Queen Charlotte's rise to prominence and power in Bridgerton's England.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Queen to Be",
+                url: "https://drive.google.com/file/d/1ksucPLc15paA3fLEE6WCwiIrFVq3_bqd/uc?export=download"
+              },
+              "2": {
+                title: "Honey and the Hive",
+                url: "https://drive.google.com/file/d/1bW9gBQmxKktKZTO8oPeviSsRTNfq3YFw/uc?export=download"
+              },
+              "3": {
+                title: "Even Days",
+                url: "https://drive.google.com/file/d/14fiZI1VEi48-cJxblxFEfT2pLTGEIg9I/uc?export=download"
+              },
+              "4": {
+                title: "Holding the King",
+                url: "https://drive.google.com/file/d/15LlF9PdgsLEeNzXMRcvQVdJt8Ep8DFcb/uc?export=download"
+              },
+              "5": {
+                title: "Gardens in Bloom",
+                url: "https://drive.google.com/file/d/184TLIv6MolVpX_K5pSIxWz1rpBfbJ-zH/uc?export=download"
+              },
+              "6": {
+                title: "Crown Jewels",
+                url: "https://drive.google.com/file/d/1W5Y1GTmrku2nftI2U7wFNFYGPpj1VbIu/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "lovecraft": {
+        title: "Lovecraft Country",
+        poster: "https://m.media-amazon.com/images/M/MV5BZTc2ZGI2MDItZGFjMC00MDU1LWI0NjktODhhYmU0MWViMDg1XkEyXkFqcGc@._V1_.jpg",
+        description: "A young African-American travels across the U.S. in the 1950s in search of his missing father.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Sundown",
+                url: "https://drive.google.com/file/d/1C6l8WbAuDv21C-F2AhaG-SGecHXwbMQN/uc?export=download"
+              },
+              "2": {
+                title: "Whitey's on the Moon",
+                url: "https://drive.google.com/file/d/1KfFoDEHHz_XoOn5SdSCAk5-e9kn5VxWe/uc?export=download"
+              },
+              "3": {
+                title: "Holy Ghost",
+                url: "https://drive.google.com/file/d/1MUqnk90bWKcnwoYE8E0jd6UqhHUQNeVv/uc?export=download"
+              },
+              "4": {
+                title: " A History of Violence.…",
+                url: "https://drive.google.com/file/d/1VbFL9FD_k4FkuSoeI1Mk7KzQPSLVKZFh/uc?export=download"
+              },
+              "5": {
+                title: "Strange Case",
+                url: "https://drive.google.com/file/d/1biuTf4tJa39KllDBjFVBWn5irJqMitzn/uc?export=download"
+              },
+              "6": {
+                title: "Meet Me in Daegu",
+                url: "https://drive.google.com/file/d/1q6mZF-xAsl5BOpVGk-EC6YK3cT7Kp2MY/uc?export=download"
+              },
+              "7": {
+                title: "I Am",
+                url: "https://drive.google.com/file/d/1voBSXiLuItjY2eCbJt4o8VyiA5IQyaUU/uc?export=download"
+              },
+              "8": {
+                title: "Jig-A-Bobo",
+                url: "https://drive.google.com/file/d/1rpEnt8kd4cJetwZlxaazpxmHmtNx0UWc/uc?export=download"
+              },
+              "9": {
+                title: "Rewind 1921",
+                url: "https://drive.google.com/file/d/1wslVHcWM_YaT5GEkUDSRjpFesgDrEOOm/uc?export=download"
+              },
+              "10": {
+                title: "Full Circle",
+                url: "https://drive.google.com/file/d/1f6Mn_N0k_NJy3LXSDyw36Jlek1NtEEcS/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "bloodwater": {
+        title: "Blood & Water",
+        poster: "https://m.media-amazon.com/images/M/MV5BYjUxN2E2MWYtYTFiNi00YmJiLTkzOGMtNGRhYmI3ZGM4ZmQ0XkEyXkFqcGc@._V1_.jpg",
+        description: "After crossing paths at a party, a Cape Town teen transfers to an elite school to prove whether the popular girl is her sister who was abducted at birth.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Fiksation",
+                url: "https://drive.google.com/file/d/1pUBSx1DrfakV7rWwab2e7sfWyD--1rFe/uc?export=download"
+             },
+              "2": {
+                title: "The Interview",
+                url: "https://drive.google.com/file/d/1jK9QVh3La_-FgWsL7TlzjVBwboNEl_76/uc?export=download"
+              },
+              "3": {
+                title: "Propaganda",
+                url: "https://drive.google.com/file/d/1ziocllqZTw17ZAjBvSdA3LtU5sEBXWWy/uc?export=download"
+              },
+              "4": {
+                title: "Payback's a Btch",
+                url: "https://drive.google.com/file/d/1Bbw1WB9bsfQk5XV9jidtqIn4gap5bzKn/uc?export=download"
+              },
+              "5": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1NYaxfT0KMjxtOePGzoO_cn7GkEhdbga1/uc?export=download"
+              },
+              "6": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1tVvzljQj3AO5mm0SuHqHnsevkXPDKKU_/uc?export=download"
+              }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "New Kid Syndrome",
+                url: "https://drive.google.com/file/d/1KbIr0VNWvdQV8V9K4qnCoS2LeWPqVGnI/uc?export=download"
+              },
+              "2": {
+                title: "Mayday",
+                url: "https://drive.google.com/file/d/1SogA1q_TLJ5PIh7atZ0C3hbE9niAxCmf/uc?export=download"
+              },
+              "3": {
+                title: "The Source",
+                url: "https://drive.google.com/file/d/1YqWTIx4LSd2egwPuDEWFBPM8NzHipMc6/uc?export=download"
+              },
+              "4": {
+                title: "Spiyoyo",
+                url: "https://drive.google.com/file/d/1E9FcqGAfXHs09EgRc7pO61M-V57Jh6W-/uc?export=download"
+              },
+              "5": {
+                title: "Puleng vs. The World",
+                url: "https://drive.google.com/file/d/1wlEoK2MB6KRGI2srM6OsiZmEolrKQ11G/uc?export=download"
+              },
+              "6": {
+                title: "Dark Times",
+                url: "https://drive.google.com/file/d/1AqxBN9hVMdN94H1bJveTwiRiXprr7eDl/uc?export=download"
+              },
+              "7": {
+                title: "Family Matters",
+                url: "https://drive.google.com/file/d/1JoWJdVuBys3KeKDTvTbQ4j37cE4b37s5/uc?export=download"
+              }
+            }
+          }
+        }
+      },   
+      "prisonbreak": {
+        title: "Prison Break",
+        poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p185128_b_v8_ag.jpg",
+        description: "Due to a political conspiracy, an innocent man is sent to death row and his only hope is his brother, who makes it his mission to deliberately get himself sent to the same prison in order to break the both of them out, from the inside.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Pilot",
+                url: "https://drive.google.com/file/d/1S8PEvdbiBwsEYbRWMFQQxFl90TmsE-yx/uc?export=download"
+              },
+              "2": {
+                title: "Allen",
+                url: "https://drive.google.com/file/d/1yrxtUxAOqagVwz4yPmQlnNYVCeNit-LI/uc?export=download"
+              },
+              "3": {
+                title: "Cell Test",
+                url: "https://drive.google.com/file/d/1llSB-1AHJfZZ8CegtEzF9xtJZS8p5YVy/uc?export=download"
+              },
+              "4": {
+                title: "Cute Poison",
+                url: "https://drive.google.com/file/d/17SemluiyIxepug2bkA3vsnlL6P3ByM28/uc?export=download"
+              },
+              "5": {
+                title: "English, Fitz or Percy",
+                url: "https://drive.google.com/file/d/1Nu3EadWFxfdtoOdlEAGx1cuxya-ML05A/uc?export=download"
+              },
+              "6": {
+                title: "Riots, Drills and the Devil",
+                url: "https://drive.google.com/file/d/1valQ09z_DBXpi4Cd4gykIndQ_Oc9ZME4/uc?export=download"
+              },
+              "7": {
+                title: "Riots, Drills and the Devil (Part 2)",
+                url: "https://drive.google.com/file/d/1IhOqiStZ4puEx1ZfzuEWPvKtv8DiQ3V1/uc?export=download"
+              },
+              "8": {
+                title: "The Old Head",
+                url: "https://drive.google.com/file/d/1Q9RyDcI73xg0dwVnFv_li-BVv4z9wtBh/uc?export=download"
+              },
+              "9": {
+                title: "Tweener",
+                url: "https://drive.google.com/file/d/1g53-aPlap6Q2jvZtKrhAFLl6A2PxeRs8/uc?export=download"
+              },
+              "10": {
+                title: "Sleight of Hand",
+                url: "https://drive.google.com/file/d/1rI_7uTF768XDmiAdoa4dnYAui4CuknHB/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "power": {
+        title: "Power",
+        poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10426936_b_v13_aa.jpg",
+        description: "James 'Ghost' St. Patrick, a wealthy New York nightclub owner who has it all, catering to the city's elite and dreaming big, lives a double life as a drug kingpin.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Not Exactly How We Planned",
+                url: "https://drive.google.com/file/d/1QBNPmjIebkROtm8cE9MawSU-D4NhSDiu/uc?export=download"
+             },
+              "2": {
+                title: "Whoever He Is",
+                url: "https://drive.google.com/file/d/11lMTcNN5iJCZ4a_BBOSEnebN-6TTug_Q/uc?export=download"
+              },
+              "3": {
+                title: "This Is Real",
+                url: "https://drive.google.com/file/d/1_-TjVilLH_uxn8VeLLiB2jXH4RO5oNNO/uc?export=download"
+              },
+              "4": {
+                title: "Who Are You",
+                url: "https://drive.google.com/file/d/1FR3JrWOnlvtnX7FgnRkq_nIW_kNUZwNH/uc?export=download"
+              },
+              "5": {
+                title: "I Gotta Go",
+                url: "https://drive.google.com/file/d/14uEJDcAZ51XakrT6g8QZZc3BMsMNy3q7/uc?export=download"
+              },
+              "6": {
+                title: "Who You With",
+                url: "https://drive.google.com/file/d/1YxkO_JVKcB-JJaMZOwDsT9iL-aLJzctL/uc?export=download"
+              },
+              "7": {
+                title: "Loyalty",
+                url: "https://drive.google.com/file/d/1TkZXAFXlC0x7S14Hebw0swpar3GmfvrZ/uc?export=download"
+              },
+              "8": {
+                title: "Best Laid Plans",
+                url: "https://drive.google.com/file/d/14n0YxXhQmMEvNH7DwlUgW42gNqvPd3p2/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "Django": {
+        title: "Django",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgb2-KGB4MUOnPHGZZaglBUi_7otbBOUMnfQ&s",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "New Babylon",
+                url: "https://drive.google.com/file/d/1A7ZPhrpCZHdooyCshbOlGjYVe8T_X0L6/uc?export=download"
+              },
+              "2": {
+                title: "The_Lady",
+                url: "https://drive.google.com/file/d/1LPtryupCZ9Ho2c7wme1oFiOkI71ca3gd/uc?export=download"
+              },
+              "3": {
+                title: "Nagadoches",
+                url: "https://drive.google.com/file/d/12SpkYTcHQI0VqHBCovk8Zp6owVboUQJY/uc?export=download"
+              },
+              "4": {
+                title: "Fountainhead",
+                url: "https://drive.google.com/file/d/1K9D5t3641_sJAQMSWreCjBFA3kHel24e/uc?export=download"
+              },
+              "5": {
+                title: "Chambersburg",
+                url: "https://drive.google.com/file/d/1w_3qR_Wisvw2I7KrIOqoWHAdn3CRS12H/uc?export=download"
+              },
+              "6": {
+                title: "The_Trial",
+                url: "https://drive.google.com/file/d/18EcSKVHF5AaAQjT4FaCeIokxMRF6pHsA/uc?export=download"
+              },
+              "7": {
+                title: "The_Giant",
+                url: "https://drive.google.com/file/d/1mQZA5rddxQoYsn9z6aqmR4DA9-I1oGGr/uc?export=download"
+              },
+              "8": {
+                title: "Tobacco_Tin",
+                url: "https://drive.google.com/file/d/1PgKjKb_5hl3brlORH07XnkZVw8R8lL8r/uc?export=download"
+              },
+              "9": {
+                title: ".…",
+                url: "https://drive.google.com/file/d/14r0ABwH7HkFeYBbVe06hpVKmLJCDm76-/uc?export=download"
+              },
+              "10": {
+                title: "…",
+                url: "https://drive.google.com/file/d/12D68vvGwmUHBU7HbZyxljkw4uHFDDXlz/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "The Strain": {
+        title: "The Strain",
+        poster: "https://m.media-amazon.com/images/M/MV5BYzlmNWU4OTMtMDY0My00MTI0LWFhNWItNzU0OGJhNWI0MDI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Night Zero",
+                url: "https://drive.google.com/file/d/1u6lCWBicDApMaa1uskmYqzdb2xCM7Cg-/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "The Sex Lives of College Girls": {
+        title: "The Sex Lives of College Girls",
+        poster: "https://thebatt.com/wp-content/uploads/2022/12/5f38267061aaaddb8e61b2035afa947d-810x1200.jpg",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Welcome t...",
+                url: "https://drive.google.com/file/d/1ZVyEZTchOP5GbZbnQHOcDwJ_SNpCEscr/uc?export=download"
+               },
+              "2": {
+                title: "...…",
+                url: "https://drive.google.com/file/d/1HYNtaaQTg9tv9AMCAVANryCj5CmDYXH4/uc?export=download"
+              },
+              "3": {
+                title: "Le Tuteur…",
+                url: "https://drive.google.com/file/d/1zC3hSrC6hxgXC9z9amnBybavSOMmkvfg/uc?export=download"
+              },
+              "4": {
+                title: "Kappa",
+                url: "https://drive.google.com/file/d/1zgPEVhSnpRwAPf5Qjx_wvD4Ue4Euw92x/uc?export=download"
+              },
+              "5": {
+                title: "That Comm…",
+                url: "https://drive.google.com/file/d/1bhuAWts78xloa2ZXVuxqILR4RpkBG7pl/uc?export=download"
+              },
+              "6": {
+                title: "Parents W…",
+                url: "https://drive.google.com/file/d/1rmv_BK34dJgyjyj_5zQNVyRqBK8LNfo-/uc?export=download"
+              },
+              "7": {
+                title: "I Think I…",
+                url: "https://drive.google.com/file/d/1xvxwcvfrGVXsxbkeAidczZInEU0csR4u/uc?export=download"
+              },
+              "8": {
+                title: "The Surpr…",
+                url: "https://drive.google.com/file/d/1ROWGOYa67OfYDsLBT_uhLlIXab3BAdFv/uc?export=download"
+              },
+              "9": {
+                title: "Cheating.…",
+                url: "https://drive.google.com/file/d/1VdZJ_7tOXAUql3haCPUSe6NFq4LyXOLS/uc?export=download"
+              },
+              "10": {
+                title: "The Trut…",
+                url: "https://drive.google.com/file/d/1cWasWBQZI_RqcgYIN7cmauPkE3uDoyLw/uc?export=download"
+              }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "Winter_…",
+                url: "https://drive.google.com/file/d/1NVQFVAb-_1ig8U8h8s27ypjbiX0lACVq/uc?export=download"
+              },
+              "2": {
+                title: "Frat Prob…",
+                url: "https://drive.google.com/file/d/1uF3eYasHNfoAFWpz8NmQcftmJ2rXK_EQ/uc?export=download"
+              },
+              "3": {
+                title: "The Short…",
+                url: "https://drive.google.com/file/d/1PFlCSU_1XBdDOYlCMF6F1aBCGArBUbcj/uc?export=download"
+              },
+              "4": {
+                title: "Will You…",
+                url: "https://drive.google.com/file/d/1q3oTfRD3jUIZxQX2HskeytdFPfIdAg7c/uc?export=download"
+              },
+              "5": {
+                title: "Taking Sh…",
+                url: "https://drive.google.com/file/d/1cQqa1H3gtrAakb2Au_QW5lij35e_RsvQ/uc?export=download"
+              },
+              "6": {
+                title: "Doppelban…",
+                url: "https://drive.google.com/file/d/15BC69-Unfn4eDd2R0SR0Lu2bz0XoRvTI/uc?export=download"
+              },
+              "7": {
+                title: "The Essex…",
+                url: "https://drive.google.com/file/d/1u-eGmcpnchIslkYi9K_OhL6uAdmTUA-w/uc?export=download"
+              },
+              "8": {
+                title: "Pre-Frosh…",
+                url: "https://drive.google.com/file/d/1NWToA7IqqzAkn1OZ5eZGR4DSfq-5RIiL/uc?export=download"
+              },
+              "9": {
+                title: "Sex & Bas…",
+                url: "https://drive.google.com/file/d/1_suD7D56g7S8qJ5JtqSD1K4dwFZAUpPR/uc?export=download"
+              },
+              "10": {
+                title: "The Room…",
+                url: "https://drive.google.com/file/d/1rc_9Ybc2srHtSprkQvTri8VSvLEHPnt6/uc?export=download"
+              }
+            }
+          },
+          "3": {
+            episodes: {
+              "1": {
+                title: "Welcome B…",
+                url: "https://drive.google.com/file/d/1NPFhxXz9MmA6Vg3W7WK9vfamr8QTt6f1/uc?export=download"
+              },
+              "2": {
+                title: "Lila by L…",
+                url: "https://drive.google.com/file/d/1IgEFiuNFWLHdNXfy0iYvZx3KmZVQy6Ql/uc?export=download"
+              },
+              "3": {
+                title: "Four to a…",
+                url: "https://drive.google.com/file/d/1l-MSOiudOXb8L_UUmqNMsrWPI38B96qr/uc?export=download"
+              },
+              "4": {
+                title: "Franklin…",
+                url: "https://drive.google.com/file/d/1EGmybWReaexgrKCWVUYn0CbWv-OclXCl/uc?export=download"
+              },
+              "5": {
+                title: "Parents W…",
+                url: "https://drive.google.com/file/d/1lqGKao5rzEHI81hs5MI0IgC3DU70Px-4/uc?export=download"
+              },
+              "6": {
+                title: "Halloween…",
+                url: "https://drive.google.com/file/d/19MrGlNINvGBufJjLl8BuoLlIomFBr1Ly/uc?export=download"
+              },
+              "7": {
+                title: "The Rodeo…",
+                url: "https://drive.google.com/file/d/1rzELyEIS2GxRJy9TCAuztafAmPzcNjD6/uc?export=download"
+              },
+              "8": {
+                title: "The Good…",
+                url: "https://drive.google.com/file/d/1S0nETPw5BbKUgvpKzOUdD50zQK-HdU9X/uc?export=download"
+              },
+              "9": {
+                title: "Pics",
+                url: "https://drive.google.com/file/d/1fxZc6EsnQKnrSCVad7LJbJpCFHeMC4-H/uc?export=download"
+              },
+              "10": {
+                title: "Essex St…",
+                url: "https://drive.google.com/file/d/1Rbv1JslQ2ue4T8vKJbl8LigUOA0QALFX/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "Nine Perfect Strangers": {
+        title: "Nine Perfect Strangers",
+        poster: "https://m.media-amazon.com/images/I/81SaeDvGMvL._UF894,1000_QL80_.jpg",
+        description: "Nine stressed city dwellers visit a boutique health-and-wellness resort that promises healing and transformation. The resort's director is a woman on a mission to reinvigorate their tired minds and bodies.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Random Acts of Ma…",
+                url: "https://drive.google.com/file/d/1sym3JtPYdendpyEP9GPjhMVcXH2kBu93/uc?export=download"
+              }
+            }
+          }
+        }
+      },      
+      "On My Block": {
+        title: "On My Block",
+        poster: "https://upload.wikimedia.org/wikipedia/en/e/e9/On_My_Block_%28TV_series%29.png",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Chapter One",
+                url: "https://drive.google.com/file/d/1WcCrkvRl7sOYEoQdIm0DDoCMQ6NixPSf/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "Hunters": {
+        title: "Hunters",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZkAReDakbc89guCoi72liKZWtdM6cneQGXQ&s",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "...",
+                url: "https://drive.google.com/file/d/19TPaoDMjVmPT_70IXiFl0wCKF1NuwFon/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "Let the Right One In": {
+        title: "Let the Right One In",
+        poster: "https://m.media-amazon.com/images/M/MV5BYzFkMzRjNjQtYzc2Mi00NGNmLTg5ZGQtMDY0ODVmNjNkNmEyXkEyXkFqcGc@._V1_.jpg",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Anything for Blood.…",
+                url: "https://drive.google.com/file/d/1HMrpiixVfrDJQdZjHYPAD6lWEJEQahVi/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "Resident Evil": {
+        title: "Resident Evil",
+        poster: "https://m.media-amazon.com/images/M/MV5BMGI5NGE2ZWMtM2M5OC00NDY0LWJjMzAtYjU5NWRhZTQyY2U0XkEyXkFqcGc@._V1_.jpg",
+        description: "Year 2036 -- 14 years after the spread of Joy caused so much pain, Jade Wesker fights for survival in a world overrun by the blood-thirsty infected and mind-shattering creatures. In this absolute carnage, Jade is haunted by her past in New Raccoon City, by her father?s chilling connections to the sinister Umbrella Corporation but mostly by what happened to her sister, Billie.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Welcome to New Raccoon Cit…",
+                url: "https://drive.google.com/file/d/1u69L35f48FIcHOPWPFpXoWr6ITdnbCYS/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "empire": {
+        title: "Empire",
+        poster: "https://m.media-amazon.com/images/M/MV5BNDQ4YTU4OWEtY2U0Mi00ZGQwLWIyYTMtZjQwMDkzYjUwOWNmXkEyXkFqcGc@._V1_.jpg",
+        description: "A hip-hop mogul must choose a successor among his three sons who are battling for control over his multi-million dollar company, while his ex-wife schemes to reclaim what is hers.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Pilot",
+                url: "https://drive.google.com/file/d/1bmZ4xp0vPYukrIJKZ4dgImAgtWdtIFsP/uc?export=download"
+              },
+              "2": {
+                title: "The Outspoken King",
+                url: "https://drive.google.com/file/d/1McvE6AJTpB6M6bDchTedxllOlT6Z-VrF/uc?export=download"
+              },
+              "3": {
+                title: "The Devil Quotes Scripture",
+                url: "https://drive.google.com/file/d/1aAv8uYY8nqR07g0sozuEVQh9UsFT2ysF/uc?export=download"
+              },
+              "4": {
+                title: "False Imposition",
+                url: "https://drive.google.com/file/d/13Wnw2UIpxUE-cv9_tZa6pvLSPTBL6oNe/uc?export=download"
+              },
+              "5": {
+                title: "Dangerous Bonds",
+                url: "https://drive.google.com/file/d/1mKQyGU76T5d-WelOofAOBhhEtxpMnkIV/uc?export=download"
+              }, 
+              "6": {
+                title: "Out, Damned Spot",
+                url: "https://drive.google.com/file/d/1FuytfCQWLYY-nxXUZNRTzx3CuYQsmdqp/uc?export=download"
+              },
+               "7": {
+                title: "Our Dancing Days",
+                url: "https://drive.google.com/file/d/1Gj8u4Y2tWK2fyxK9BU_SuaSbfPlY5O_e/uc?export=download"
+              },
+              "8": {
+                title: "The Lyon's Roar",
+                url: "https://drive.google.com/file/d/1Xp6NWT7w4oldFX4_ovdmn97aQIoINQFQ/uc?export=download"
+              },
+              "9": {
+                title: "Unto the Breach",
+                url: "https://drive.google.com/file/d/1BLdalAWEM4niOUbcGkIMsD0gw1zeq7FU/uc?export=download"
+              },
+              "10": {
+                title: "Sins of the Father",
+                url: "https://drive.google.com/file/d/1gs_eLdmIhrGDJhergX8qkcCoaI8VhaRf/uc?export=download"
+              },
+              "11": {
+                title: "Die But Once",
+                url: "https://drive.google.com/file/d/1l-dYY3pjRNzQZwBLHA4K5Ya9gdOGpgAD/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "loveisblind": {
+        title: "Love Is Blind",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNMoA8hDZ0f58ooGOKHJ2v7vDoLgb6QfZbA&s",
+        description: "Singles who want to be loved for who they are, rather than what they look like, have signed up for a less conventional approach to modern dating.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Is Love Blind?",
+                url: "https://drive.google.com/file/d/19FSIjbP2fPx8bQzXm10KVpj0tYkn1kvP/uc?export=download"
+              },
+              "2": {
+                title: "Will You Marry Me?",
+                url: "https://drive.google.com/file/d/1g9rgY-byPvwbB5Vl-dxgz61iE8W9bg1o/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "bridgerton": {
+        title: "Bridgerton",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcg2qVXmmvpBZYEAIbY6sGDmLiq2QMQ-HlxA&s",
+        description: "The eight close-knit siblings of the Bridgerton family look for love and happiness in London high society.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Diamond of the First Water",
+                url: "https://drive.google.com/file/d/1examplelink24/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "duster": {
+        title: "Duster",
+        poster: "https://m.media-amazon.com/images/M/MV5BYWI3NDVjODctYTM2MS00YzZhLWJjOTItN2JmYTY5ODdkYTY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        description: "A getaway driver for a crime syndicate in the 1970s Southwest.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/10l4atRVJqfvTr8EcVdTs4_K4-QDiz3RY/uc?export=download"
+              },
+              "2": {
+                title: "Suspicious Minds",
+                url: "https://drive.google.com/file/d/1qjy_KsVhp3WeQjM5swaeQ1ONHt-6WbHV/uc?export=download"
+              },
+              "3": {
+                title: "Episode 3",
+                url: "https://drive.google.com/file/d/1cQaWSz6Vk19HRFIlzgR34vpUwZwoNDQH/uc?export=download"
+              },
+              "4": {
+                title: "Episode 4",
+                url: "https://drive.google.com/file/d/1_7w0ngVSQHxJ0uU5w5T41lJu4wFMpj9S/uc?export=download"
+              },
+              "5": {
+                title: "Episode 5",
+                url: "https://drive.google.com/file/d/1GHSVuQEWGmYVqZDI2wpMmKJLu-N7RGek/uc?export=download"
+              },
+              "6": {
+                title: "Episode 6",
+                url: "https://drive.google.com/file/d/1zEfhdgn9BSbVvt9V8IgnZZndFZqwzvZs/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "strangerthings": {
+        title: "Stranger Things",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwPKlpSF1q_Gw4Txv9sjUoJFAYRsNgMqZGdw&s",
+        description: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Chapter One: The Vanishing of Will Byers",
+                url: "https://drive.google.com/file/d/1examplelink25/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "houseofdragon": {
+        title: "House of the Dragon",
+        poster: "https://m.media-amazon.com/images/I/81E-5S4Cv5L._UF894,1000_QL80_.jpg",
+        description: "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "The Heirs of the Dragon",
+                url: "https://drive.google.com/file/d/1examplelink26/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "vampirediaries": {
+        title: "The Vampire Diaries",
+        poster: "https://m.media-amazon.com/images/M/MV5BMmNjOWQzYmYtNGYxOS00MjVkLTg1MWUtMTkzMGE0MDgwNzQ5XkEyXkFqcGc@._V1_.jpg",
+        description: "The lives, loves, dangers and disasters in the town of Mystic Falls, Virginia. Creatures of unspeakable horror lurk beneath this town as a teenage girl is suddenly torn between two vampire brothers.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Pilot",
+                url: "https://drive.google.com/file/d/1examplelink27/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+        "The Real Housewives of Dubai": {
+        title: "The Real Housewives of Dubai",
+        poster: "https://m.media-amazon.com/images/M/MV5BN2Q2ZjhhNjYtOGY4Zi00MWUzLWI1NDEtYjM1NDcxYTg3OWIzXkEyXkFqcGc@._V1_.jpg",
+        description: "...",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Sand Dunes…",
+                url: "https://drive.google.com/file/d/1eT-HNbL55v0--Ucbc33fsog7gajmjSvD/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "shogun": {
+        title: "Shogun",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRARTyv1BYpsFcX_RO8lzQMSftfs7-_ImT5tQ&s",
+        description: "When a mysterious European ship is found marooned in a nearby fishing village, Lord Yoshii Toranaga discovers secrets that could tip the scales of power.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1DGwtJHJzihw_kTKYBF3zbycZtCcNpUNR/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "fightnight": {
+        title: "Fight Night: The Million Dollar Heist",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTty7-RH5FPmweLMdrNaCbDwgI4rmb14o_lWg&s",
+        description: "A crime drama based on the true story of an armed robbery that took place the night Muhammad Ali fought in Atlanta in 1970.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/12rzPogIySsXxLowlOauG7trNfrmuqJ-z/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "buccaneers": {
+        title: "The Buccaneers",
+        poster: "https://m.media-amazon.com/images/M/MV5BY2FjZTNkOWUtNzk2NC00MTk5LTk3M2QtNTJlYWI1MGIzNzQ0XkEyXkFqcGc@._V1_.jpg",
+        description: "A group of fun-loving young American girls explode into 1870s London high society, kicking off an Anglo-American culture clash as the land of the stiff upper lip is infiltrated by a refreshing disregard for centuries of tradition.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "American Poison",
+                url: "https://drive.google.com/file/d/100AGe6HKJII9PJm2Oun9FoW0pmOSyeQ2/uc?export=download"
+              },
+              "2": {
+                title: "Women or Wives",
+                url: "https://drive.google.com/file/d/1LXVi25zKnuwPusJNYfkysVMv-gLWKo2L/uc?export=download"
+              },
+              "3": {
+                title: "The Perfect Duchess",
+                url: "https://drive.google.com/file/d/1tFdTd-tPcW_XDIzBzI6Id8dX-xf5qv9K/uc?export=download"
+              },
+              "4": {
+                title: "Homecoming",
+                url: "https://drive.google.com/file/d/1jLkGyoTJImMByGJGaQIeJB1_M-IlSkAt/uc?export=download"
+              },
+              "5": {
+                title: "Failed Betrayal",
+                url: "https://drive.google.com/file/d/1KmvL4vqY1LfBlQZBmz85wRFnMn7Fb-NG/uc?export=download"
+              },
+              "6": {
+                title: "It's Christmas",
+                url: "https://drive.google.com/file/d/1NcQ4Iok4g-az9Y-_gv3EAZ73QeSLNLII/uc?export=download"
+              },
+              "7": {
+                title: "First Footing",
+                url: "https://drive.google.com/file/d/18_lEI8RBJOSinFXCHNyvLBcejSEbJnc2/uc?export=download"
+              },
+              "8": {
+                title: "Wedding of the Season",
+                url: "https://drive.google.com/file/d/1BKJrvNLYgYcsoPLd-oKA5TNjorRA4Ju0/uc?export=download"
+              }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1OOIyPifXDlfaJP3C5RQW0iuHKsO7g47s/uc?export=download"
+              },
+              "2": {
+                title: "Episode 2",
+                url: "https://drive.google.com/file/d/1Ft4eE-GpDAaQYK4f_t1XVgPBVJxuVpaN/uc?export=download"
+              }, 
+              "3": {
+                title: "Episode 3",
+                url: "https://drive.google.com/file/d/18jI515wBOaX0m2-GCkljMonEK16AEfBM/uc?export=download"
+               },
+              "4": {
+                title: "Episode 4",
+                url: "https://drive.google.com/file/d/1nSp9iromZKg3qMcEKHvpRJUSnIJ_4ofw/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "boarders": {
+        title: "Boarders",
+        poster: "https://images.justwatch.com/poster/312663243/s718/boarders.jpg",
+        description: "Five talented Black inner-city teenagers are given scholarships to attend an elite boarding school.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1YaA1phxdLHNFoUiZ5VoLODSrEaFzEZrw/uc?export=download"
+              }, 
+              "2": {
+                title: "Episode 2 ",
+                url: "https://drive.google.com/file/d/1iBgYwyrm9dp67j6oT-uJTY8UALrDAnt6/uc?export=download"
+              },
+              "3": {
+                title: "Episode 3",
+                url: "https://drive.google.com/file/d/1T8mXGlo8MVZQUoNWczR9W4pHPSaLKFOu/uc?export=download"
+              },
+              "4": {
+                title: "Episode 4",
+                url: "https://drive.google.com/file/d/1sYOMNABsCRzVVeSWqp3_N6FYIH3J5K34/uc?export=download"
+              },
+              "5": {
+                title: "Episode 5",
+                url: "https://drive.google.com/file/d/1yZ58XN7qqRQ0X0C_ArmDdHMDlfGgiSwF/uc?export=download"
+              },
+              "6": {
+                title: "-Episode 6",
+                url: "https://drive.google.com/file/d/1EtPtuF2k9SEQ36kDDpQfdaeCu8Uya3lr/uc?export=download"
+               }
+            }
+          },
+          "2": {
+            episodes: {
+              "1": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1_Pb53gtdDu2-yf0IeZFSDqsnhobuP94c/uc?export=download"
+              },
+              "2": {
+                title: "…",
+                url: "https://drive.google.com/file/d/1IwyKjoFYLPsUgo1EgDT62kKYMYbACSDD/uc?export=download"
+              },
+              "3": {
+                title: "...",
+                url: "https://drive.google.com/file/d/1QSq0scnZUNreA43T2LgGn4GZrK573KHu/uc?export=download"
+              },
+              "4": {
+                title: "…",
+                url: "https://drive.google.com/file/d/1c9ejwFge00VThI5jn4d_TPhdR7lepOzB/uc?export=download"
+              },
+              "5": {
+                title: "...",
+                url: "https://drive.google.com/file/d/10zctdDyrCHHb3wJNqi0wD_jLP908kkfk/uc?export=download"
+              },
+              "6": {
+                title: "…",
+                url: "https://drive.google.com/file/d/1J85lB4K6hMiPlDxqEYA0DxSPDvqfmXc8/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "fallout": {
+        title: "Fallout",
+        poster: "https://m.media-amazon.com/images/M/MV5BNjI5ZmZkNDktZDliMS00ZjlmLWE2MTUtMWVlZjU2YWQ3ZDYxXkEyXkFqcGc@._V1_.jpg",
+        description: "In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1examplelink30/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "from": {
+        title: "From",
+        poster: "https://i.redd.it/4h9u3h6e0z2b1.jpg",
+        description: "Unravel the mystery of a nightmarish town in middle America that traps all those who enter.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1examplelink31/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "howtogetaway": {
+        title: "How to Get Away with Murder",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzFmY2ZjMGEtYzA3OS00OGZiLTkwMWItZjk2NDQ3MmQxMjQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        description: "A group of ambitious law students and their brilliant criminal defense professor become involved in a twisted murder plot that promises to change the course of their lives.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Pilot",
+                url: "https://drive.google.com/file/d/1examplelink32/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "snowfall": {
+        title: "Snowfall",
+        poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p21307724_b_v13_aa.jpg",
+        description: "A look at the early days of the crack cocaine epidemic in Los Angeles during the beginning of the 1980s.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Pilot",
+                url: "https://drive.google.com/file/d/1examplelink33/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "bigcigar": {
+        title: "The Big Cigar",
+        poster: "https://i1.sndcdn.com/artworks-P6DFZRVRvf6wDlVi-maFCaw-t500x500.png",
+        description: "The incredible true story of Black Panther leader Huey P. Newton's escape to Cuba.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/14l43nh6Ngm3gv-p8toylqxLjVMlB071o/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "kingsofjoberg": {
+        title: "Kings of Joburg",
+        poster: "https://images.justwatch.com/poster/302614973/s718/kings-of-joburg.jpg",
+        description: "After the death of Johannesburg's crime kingpin, his brother steps in to take over the family business while trying to keep his brothers from destroying each other.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1examplelink34/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "sweettooth": {
+        title: "Sweet Tooth",
+        poster: "https://resizing.flixster.com/cAHsXYhDpF4dyk0rLl77fZulXLA=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNTFiZDM3OGEtOTJhYS00MzRhLTlmMGEtNWU3NzcwM2MzYTNmLmpwZw==",
+        description: "A boy who is half human and half deer survives in a post-apocalyptic world with other hybrids.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1examplelink35/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "americangods": {
+        title: "American Gods",
+        poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jVhyy4he3rxRsbscTmwncuh4uPr6Dx6AAg&s",
+        description: "A recently released ex-convict named Shadow meets a mysterious man who calls himself Wednesday and who knows more than he first seems to about Shadow's life and past.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "The Bone Orchard",
+                url: "https://drive.google.com/file/d/1examplelink36/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "primetarget": {
+        title: "Prime Target",
+        poster: "https://m.media-amazon.com/images/M/MV5BNGExZjExZjgtYzZkZi00OTljLWI1ZTgtMTdiN2E1NTA1YThjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        description: "A detective investigates a series of murders that may be connected to a secret government program.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1examplelink37/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "abbottelementary": {
+        title: "Abbott Elementary",
+        poster: "https://m.media-amazon.com/images/M/MV5BYTNmMmM0MzQtYzg3Mi00NmIyLThmOGQtYmNlOTY0NDUwNzBjXkEyXkFqcGc@._V1_.jpg",
+        description: "A workplace comedy following a group of dedicated, passionate teachers and a slightly tone-deaf principal at a Philadelphia public school.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Pilot",
+                url: "https://drive.google.com/file/d/1examplelink38/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "bet": {
+        title: "Bet",
+        poster: "https://m.media-amazon.com/images/M/MV5BZWFkNjVkMTAtNjAwZS00YmZmLWEzY2ItMjc0MGEwNmFhMzk3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        description: "A dark comedy about a man who makes a bet with the devil and must navigate the consequences.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1examplelink39/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "lastofus": {
+        title: "The Last of Us",
+        poster: "https://m.media-amazon.com/images/M/MV5BYWI3ODJlMzktY2U5NC00ZjdlLWE1MGItNWQxZDk3NWNjN2RhXkEyXkFqcGc@._V1_.jpg",
+        description: "After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "When You're Lost in the Darkness",
+                url: "https://drive.google.com/file/d/1examplelink40/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "titans": {
+        title: "Titans",
+        poster: "https://m.media-amazon.com/images/I/71NX67LC1gL._UF1000,1000_QL80_.jpg",
+        description: "A team of young superheroes led by Nightwing (formerly Batman's first Robin) form to combat evil and other perils.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Titans",
+                url: "https://drive.google.com/file/d/1examplelink41/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "cloakanddagger": {
+        title: "Cloak & Dagger",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTU4NzU2OTc5NF5BMl5BanBnXkFtZTgwMDg3MzA0NzM@._V1_.jpg",
+        description: "Two teenagers from very different backgrounds find themselves burdened and awakened to newly acquired superpowers while falling in love.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "First Light",
+                url: "https://drive.google.com/file/d/1examplelink42/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "goosebumps": {
+        title: "Goosebumps",
+        poster: "https://static1.srcdn.com/wordpress/wp-content/uploads/2023/10/goosebumps-2023-easter-eggs-and-references.jpg",
+        description: "A group of five high schoolers embark on a shadowy and twisted journey to investigate the tragic passing three decades earlier of a teen named Harold Biddle - while also unearthing dark secrets from their parents' past.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Say Cheese and Die!",
+                url: "https://drive.google.com/file/d/1examplelink43/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "westworld": {
+        title: "Westworld",
+        poster: "https://upload.wikimedia.org/wikipedia/en/a/a7/Westworld_Season_3.jpg",
+        description: "At the intersection of the near future and the reimagined past, waits a world in which every human appetite can be indulged without consequence.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "The Original",
+                url: "https://drive.google.com/file/d/1examplelink44/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "schoolofgood": {
+        title: "The School for Good and Evil",
+        poster: "https://upload.wikimedia.org/wikipedia/en/c/c5/The_School_for_Good_and_Evil_movie_poster.jpeg",
+        description: "Best friends Sophie and Agatha find themselves on opposing sides of an epic battle when they're swept away into an enchanted school where aspiring heroes and villains are trained to protect the balance between good and evil.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1examplelink45/uc?export=download"
+              }
+            }
+          }
+        }
+      },
+      "topboy": {
+        title: "Top Boy",
+        poster: "https://resizing.flixster.com/suPMbIFPaMa4VWAM72eq76mjJ9g=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvYjRhYjdkZDQtZGE5OC00NTdmLWFiM2QtZTEzNDJjM2RkMGM1LmpwZw==",
+        description: "Two London drug dealers ply their lucrative trade at a public housing estate in East London.",
+        seasons: {
+          "1": {
+            episodes: {
+              "1": {
+                title: "Episode 1",
+                url: "https://drive.google.com/file/d/1examplelink46/uc?export=download"
+              }
+            }
+          }
+        }
+      }
+    };
+
+    // Series functions
+    function showSeasons(seriesId, event) {
+      event.stopPropagation();
+      const series = seriesDatabase[seriesId];
+      document.getElementById('seriesTitle').textContent = series.title;
+      
+      const seasonsContainer = document.getElementById('seasonsContainer');
+      seasonsContainer.innerHTML = '';
+      
+      // Create season buttons
+      for (const seasonNum in series.seasons) {
+        const seasonBtn = document.createElement('button');
+        seasonBtn.className = 'category';
+        seasonBtn.textContent = `Season ${seasonNum}`;
+        seasonBtn.onclick = (e) => {
+          e.stopPropagation();
+          showEpisodes(seriesId, seasonNum);
+        };
+        seasonsContainer.appendChild(seasonBtn);
+      }
+      
+      document.getElementById('seasonsModal').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function showEpisodes(seriesId, seasonNum) {
+      const series = seriesDatabase[seriesId];
+      const season = series.seasons[seasonNum];
+      
+      document.getElementById('seasonTitle').textContent = `${series.title} - Season ${seasonNum}`;
+      
+      const episodesContainer = document.getElementById('episodesContainer');
+      episodesContainer.innerHTML = '';
+      
+      // Create episode list
+      for (const episodeNum in season.episodes) {
+        const episode = season.episodes[episodeNum];
+        const episodeItem = document.createElement('div');
+        episodeItem.className = 'episode-item';
+        episodeItem.innerHTML = `
+          <div class="episode-title">Episode ${episodeNum}: ${episode.title}</div>
+          <button class="watch-episode-btn" onclick="openModal('${episode.url}', '${series.title} S${seasonNum}E${episodeNum}: ${episode.title}')">
+            Watch Now
+          </button>
+        `;
+        episodesContainer.appendChild(episodeItem);
+      }
+      
+      closeSeasonsModal();
+      document.getElementById('episodesModal').style.display = 'block';
+    }
+
+    function closeSeasonsModal() {
+      document.getElementById('seasonsModal').style.display = 'none';
+    }
+
+    function closeEpisodesModal() {
+      document.getElementById('episodesModal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Content database for search and display
+    const contentDatabase = [
+      // Featured Movies
+      { 
+        title: "The Fast and the Furious", 
+        year: "2001", 
+        url: "https://drive.google.com/file/d/1dTaQmZm-4VXGnZIHEsCKAJoZxqe9iHob/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUjUwYaIn_nCYzA5g0aImrGN2Gv662AuYqzg&s"
+      },
+      { 
+        title: "Sinners", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1Q3dwdHbwJS1_GipIWBPBDc9vMmFecU3t/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_.jpg"
+      },
+      
+     // TV Yami Movies
+      { 
+        title: "Mandela - Long Walk to Freedom", 
+        year: "2013", 
+        url: "https://drive.google.com/file/d/1M8J59U9HinCov9m6OKmQ0SABCRmy1SUs/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mandela_-_Long_Walk_to_Freedom_ZA_poster.png/250px-Mandela_-_Long_Walk_to_Freedom_ZA_poster.png"
+      },
+      { 
+        title: "The Creator", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1w8PyCcbOlV2WKo5CsQoN8_LWDWLvPGds/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMDkxMTUxOTQtYzM4Yi00YzA2LTgzOTYtNDg2NTliODE0ZTRjXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "World War Z", 
+        year: "2013", 
+        url: "https://drive.google.com/file/d/1F9zBuC0Uy16yR_LikV9S9iJFab07Uj7L/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BODg3ZTM2YWQtZDE5Ny00NGNiLTkzYjgtYWVlYjNkOTg5NDI1XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "White chicks", 
+        year: "2004", 
+        url: "https://drive.google.com/file/d/1EnZgr1dEc2Srj2bZw8YEbvN_Shm1jg-3/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://imusic.b-cdn.net/images/item/original/592/5706710215592.jpg?2023-white-chicks-2004-dvd-dvd&class=scaled&v=1519874403"
+      },
+      {
+        title: "Training Day", 
+        year: "2002", 
+        url: "https://drive.google.com/file/d/1FZTJ9LXWqMEMl8E5LM8sHMt6ENojwcbi/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/b/b3/Training_Day_Poster.jpg"
+      },
+      {    
+        title: "Parasite", 
+        year: "2009", 
+        url: "https://drive.google.com/file/d/1Umsb-7Rj6U2JQKUeCrdsgV3sPGHPNzBb/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "The Pursuit of happyness", 
+        year: "2006", 
+        url: "https://drive.google.com/file/d/1GJSMso011aWBz4eYIPiAH7qoxHcWIRmN/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyYMdhzuHEPl0z4a8RUnxFaIBLTwknxaqkxw&s"
+      },
+      {  
+        title: "Wicked", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1BlC69fpAeG8lTiAOYhYxM_VacER4Sbt_/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOWMwYjYzYmMtMWQ2Ni00NWUwLTg2MzAtYzkzMDBiZDIwOTMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Underworld", 
+        year: "2003", 
+        url: "https://drive.google.com/file/d/1SV7wUjIuySN5hLOxkSisQKvNCdfEDWYh/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/c/cc/Underworld_%282003_film%29_poster.jpg"
+      },
+      {
+        title: "8 A South African Horror Story", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/1o4-PGkvm8JFmjz-DFXsCNprub8PutiZr/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/6/67/The_Soul_Collector.jpg"
+      },
+      {
+        title: "No Good Deed", 
+        year: "2002", 
+        url: "https://drive.google.com/file/d/14kgTOl7g785Cb_OMEs_rvQ-HilLqTOz-/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjVhOTA5ODYtNDkwOS00M2JmLWI3ZTAtYTEyY2VmZmU3MDc0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "28 Days Later...", 
+        year: "2003", 
+        url: "https://drive.google.com/file/d/1aJp-4YvQ8OfrwUgzdiLSwAai0-UvObg8/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://a.ltrbxd.com/resized/sm/upload/qr/28/nz/3f/xaYdxi1PBEAYvqknvAmMPK5Eff3-0-1000-0-1500-crop.jpg?v=22d7237ed9"
+      },
+      {
+        title: "Us", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/1mJ914UIuIzrQ-7NcjryKLMozqGfbprfx/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/0/00/Us_%282019%29_theatrical_poster.png"
+      },
+      {
+        title: "Midnight in Paris", 
+        year: "2011", 
+        url: "https://drive.google.com/file/d/1jg46YKmk4HuHEtOhv0hsbd7_YGAYFguD/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTM4NjY1MDQwMl5BMl5BanBnXkFtZTcwNTI3Njg3NA@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Queen & Slim", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/1TuFuzaEGgaOCHPldeoLRGdUoEuo4wV3V/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRVBBNWwhA8VF3XRvfphnhGAaJrt_XMC3vg&s"
+      },
+      {
+        title: "Glass", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/1I25-J_YUXdN5X3D-ohSts6SMR_KHGugE/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTY1OTA2MjI5OV5BMl5BanBnXkFtZTgwNzkxMjU4NjM@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "M3GAN 2.0", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1UlVTtz3ycIQ15pl_ViD-8eIYfDklLmHH/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMzFmNjVjZWQtZjI5Zi00YThiLTg0ZWItZDdjYzhhZDE1NTE2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "How To Train Your Dragon", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1xHEumq7ZANcgy5WaswDtcRStjHV7y9uv/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/8/80/How_To_Train_Your_Dragon_2025_Poster.jpg"
+      },
+      {
+        title: "Major Payne 1995", 
+        year: "1995", 
+        url: "https://drive.google.com/file/d/1J087gZGhsmlqeocDcrMRs3n__YvtfzSp/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYTY5MGUxNjUtM2VjNy00MWQxLTg0NjEtMGU4NTZiYjhlOGJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "District 9", 
+        year: "2009", 
+        url: "https://drive.google.com/file/d/1UUSEs0viXL_z3kjzaweXN9cgaJv4rZZ2/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTM4OTI1OTM5NF5BMl5BanBnXkFtZTcwMzk5MTU1Mg@@._V1_.jpg"
+      },
+      {
+        title: "The Hate U Give", 
+        year: "2018", 
+        url: "https://drive.google.com/file/d/1XggdL3tvtVoYziT4rZRzkf-Cm-0MCdmi/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZWZlYjczMjctNTFhNC00OGUyLWFhNTgtY2RlZjE3NGI0NDJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+         title: "The prince and me", 
+        year: "2004", 
+        url: "https://drive.google.com/file/d/1OMmTi8bJKHi_6F8q52Cqvyw42B0oo8SH/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZWQ4YTlkMTctNGQyYi00ZDYyLTg4MzItMmQ0MzJhYWQ3MTk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "No Good Deed", 
+        year: "2014", 
+        url: "https://drive.google.com/file/d/11MO82A6lVE1FD6IeEiVzkUUyj-a6TK5_/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMzk0OTc3MDM5MF5BMl5BanBnXkFtZTgwOTMzMDMzMjE@._V1_.jpg"
+      },
+      {
+        title: "The Long Kiss Goodnight", 
+        year: "1996", 
+        url: "https://drive.google.com/file/d/1G9oNcOtWE7XdoxA24j21cEQpIqcPz2x1/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZjJmNzZjODktNmNhMy00NDZiLWIwNGUtM2NjYWNhZWU4YTY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Z for Zachariah", 
+        year: "2015", 
+        url: "https://drive.google.com/file/d/1fHv49qX3zP9EfVomkoqMa9L_0oMo0D7-/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTUwMTUwODUzNV5BMl5BanBnXkFtZTgwMDIxMDE5NTE@._V1_.jpg"
+      },
+      {
+        title: "2 Fast 2 Furious", 
+        year: "2003", 
+        url: "https://drive.google.com/file/d/1DRKEicP9pHRJV9kDLSR4rx2QFIj6gBrr/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOTQzYzEwNWMtOTAwYy00YWYwLWE1NTEtZTkxOGQxZTM0M2VhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Good Deeds", 
+        year: "2012", 
+        url: "https://drive.google.com/file/d/1nUdeaDecmQIrjwvDPHpTdIJgxUfJ2NnI/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjI0ODcxMzk3N15BMl5BanBnXkFtZTcwNjAzMTMwNw@@._V1_.jpg"
+      },
+      {
+        title: "Intimacy", 
+        year: "2001", 
+        url: "https://drive.google.com/file/d/1MKkUotpIy8WSs0q6MwzJNJrqY2OTQA6z/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/3/35/Intimacy_2001_film_poster.png"
+      },
+      {
+        title: "Operation Christmas Drop", 
+        year: "2020", 
+        url: "https://drive.google.com/file/d/1tHtfjsB-4jUQhpUZ2wNUSVlUe37vnr_9/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTI2MzBlMmUtNTY4NC00ZDhmLWFiMmItY2Q0YWJiZGRlMzBlXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Last Swim", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1mThestKUVNNsm-vNkxUJeH_cgSQxgUm9/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc6myE1R6Hey3dKcpKF0CrCxg5FQW19IiagA&s"
+      },
+      {
+        title: "X-Rated 2 The Greatest Adult Stars of All Time! (…", 
+        year: "2016", 
+        url: "https://drive.google.com/file/d/1uxBbwDW9xG8w3s6xZT_Oqc3JLYWIWN7V/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMWZkMDEwY2QtZDc3OC00OWMzLWE4YzYtNTkxNjgzMmNkZjMyXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Parallel", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1Q92j_RF3CXP7J82CRZlKHCigWegtg0EK/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-MvFKx8XVorplXYxOvYe-qOXX4y7eOpTOw&s"
+      },
+      {
+        title: "Seven Samurai", 
+        year: "1954", 
+        url: "https://drive.google.com/file/d/1lD_pu1xzDXqlD1m1vtIXBlzyRivEDPSr/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZjliMWExOTMtZDQ3ZS00NWU3LWIyN2EtMjllNzk3ZTNlYzg4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Nickel Boys", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1Pfj0i-s2O1VVIHz6iL2qXhQkSKIMREhI/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMGRkMzIyY2QtMjc5My00NGRjLWE5ZGUtYjRiMDNjMzAwOTU0XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "The Hateful Eight", 
+        year: "2015", 
+        url: "https://drive.google.com/file/d/1KiQ1uoEFRwJUpvRHTPaTGuMfEkBzMVU7/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@._V1_.jpg"
+      },
+      {
+        title: "The People We Hate at the Wedding", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1ttvHHtgQ1IeKzsa2uPZqTYjPpOLnZ3LL/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNTdhMTU3MjctYjU1OS00Y2M1LWJkNzEtMGMyY2VkNDQ5NDZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Paris, 13th District", 
+        year: "2021", 
+        url: "https://drive.google.com/file/d/11lE5rfYiZUS3YegDVSrpNaMF7xrCFJxQ/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMDk3OTlhMzEtOTI4My00MTcwLTk4ZjItMTA1OTYwOTE4ZDA4XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Cleaner", 
+        year: "2007", 
+        url: "https://drive.google.com/file/d/1KOVo4v6hmITqY7GuDzyWAYzo06tDYlAV/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/c/cc/Cleaner_%28film%29_poster.jpg"
+      },
+      {
+        title: "Following", 
+        year: "1998", 
+        url: "https://drive.google.com/file/d/1Rk8qusCvF3K79WyxJTV1v8heIxSOidKC/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNjZiMTI5OGItZWJhMC00OGRiLTk1NzAtYmNmZTM0MzFmNGM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Gifted Hands:The Ben Carson Story", 
+        year: "2009", 
+        url: "https://drive.google.com/file/d/1AYgdQfTVloJhJrVQTmdRic6sQ2okmJZi/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BN2IzMWFkNjktNzU0My00YjQ3LWI0NDctYTMzMWIzYTU2NDE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Good Boys", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/10r-wNUeO4WcVCr0C4wCG-GFTb_uqvwuD/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTc1NjIzODAxMF5BMl5BanBnXkFtZTgwMTgzNzk1NzM@._V1_.jpg"
+      },
+      {
+        title: "Wrong Turn", 
+        year: "2003", 
+        url: "https://drive.google.com/file/d/1_LNnvdc_iYfeXYAy2cJc2UdVt965Dhif/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/8/85/Wrong_Turn_movie.jpg"
+      },
+      {
+        title: "poetic justice", 
+        year: "1993", 
+        url: "https://drive.google.com/file/d/1f0tYKBgNvcZIIpSmXmHBm7LgKLxBk_ru/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/e/e2/Poetic_Justice_%281993_movie_poster%29.jpg"
+      },
+      {   
+        title: "Sarafina", 
+        year: "1992", 
+        url: "https://drive.google.com/file/d/1j8_klewZ10qpS1wqZQH5BY0e7OljkJKa/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNTFjZTI0NmMtNDBmZC00MTUzLWI4ZmQtOGI4NGQ4N2NkZmMwXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Poolman", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/16Gt4KJwvKgsuyg_LR3UQmf7V0xB12PbY/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjlmY2EzYmEtNDczYy00NWUyLTk4ODEtMjZlNmUwZmY3MGYzXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Out of Time", 
+        year: "2003", 
+        url: "https://drive.google.com/file/d/1ivWVsxt81PGh7A8FaUq4nAXORR1_42uX/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjAxMTMzNTI5Ml5BMl5BanBnXkFtZTcwNDAwMTQ2NA@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {    
+        title: "Shriek If You Know What I Did Last Friday the Thi…", 
+        year: "2000", 
+        url: "https://drive.google.com/file/d/1MOepwiyXUDpdW38tE4Jg3-B-LwhVB7PX/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/3/30/Shriek_If_You_Know_What_I_Did_Last_Friday_the_Thirteenth.jpg"
+      },
+      {
+        title: "Pirates.II.Stagnetti.s.Revenge", 
+        year: "2008", 
+        url: "https://drive.google.com/file/d/18WWL5RioEqV0n9oEdLCVon56ruYQA0nl/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p3513608_v_v10_aa.jpg"
+      },
+      {
+        title: "Mickey 17", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1kQeWOKZCbhZ2fodLjnUUA2LN9woK3_ye/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNrSIbqCtTZctJtFz926ZY-KzOULaIbdz6AQ&s"
+      },
+      {
+        title: "Ma", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/1x0yFQLNsbaB9Z5HBKpu4uqeMw3kZsiNY/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTA2MjA3ODU0NjBeQTJeQWpwZ15BbWU4MDE3NTQxNDcz._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "I_Know_What_You_Did_Last_Summer", 
+        year: "1997", 
+        url: "https://drive.google.com/file/d/1gpKpvSKZDt2SBVn3hz2OzGmOh-DqzeVo/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOGE1MmMxZDMtYzkyYS00N2EzLTgxYWItNWZiN2NmMzZiZTNmXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "I_Still_Know_What_You_Did_Last_Summer", 
+        year: "1998", 
+        url: "https://drive.google.com/file/d/1CZPgx9XmJZECI5oAb8dbBXCLQorU4k2Q/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOTA2ZDVlNGMtNDFmZi00YjIzLWJmZGQtNzQwODJkY2YwNGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Megan", 
+        year: "2020", 
+        url: "https://drive.google.com/file/d/1lM_ZO_fPoQT9z6Y087pVXJC_MV3Aigbm/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjU1ZWMxYTUtNzQ1ZC00ZTcxLTg0NTMtMzY1ZmQyZjhmYjMyXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "If You Were the Last", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1lQbzdIIArwgEnRug3TO_QPKlp_gj5a60/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg03FWUdkIF1nVCBF4gPvAPN_wSHBPZ0vQeQ&s"
+      },
+      {
+        title: "The_Unholy_Trinity", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1tbaq9rm3AA93Wbu3JknrymvePII1Mnx0/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BODU0MjBkNmEtNGVkZi00MjcwLWJlY2EtMGFlN2I1ODY2YzVkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Spawn", 
+        year: "1997", 
+        url: "https://drive.google.com/file/d/1ZuK8qeVeVxbxndQeVP3MNK7aHV7ES9oD/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BODhmNzA4ZjEtMTE2YS00ZTY2LThlMjEtZTdiZTM2NmY4MDJmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Head of State", 
+        year: "2003", 
+        url: "https://drive.google.com/file/d/17mZFikrWaA4Pnbqw_uMD32_34EYi9xvC/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/5/5d/Head_of_State_film.jpg"
+      },
+      {
+        title: "Man on Fire", 
+        year: "2004", 
+        url: "https://drive.google.com/file/d/1zUBYdF9pF6Z2-Wbqfj27AQxF0pUIZXwh/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSao7THa_u30b-ZaeONhFaNT2F7sX3s6_xtAg&s"
+      },
+      {
+        title: "If_Beale_Street_Could_Talk", 
+        year: "2018", 
+        url: "https://drive.google.com/file/d/1FBENfLpih8YiABh8JHn2vGmJy-ZrVtZ9/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJTW6PnQvgZdVe8TELpL8pI2iiR4e0Cdae6A&s"
+      },
+      {
+        title: "Barbie", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1k9QDNGXqlTqQZOvm6z62M5VD88uUY61t/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Good Luck to You, Leo Grande", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1Nx2GLQgsGXvUYDK1HU9mCj7EOGVakqCo/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNzA3ZDNjOTYtMWM3Ny00MTE0LThlNTAtNGFiNGU0NzhhODJlXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Hello, Goodbye and Everything in Between", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1qGAJOHp02chPWVuRsntgH3iCEl6XnNG-/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOWVlMWZiOGYtYzVjNy00M2Y5LWE2MmYtZTA2MjAwMTg3NmUzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Wicked Little Letters", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1-AlM0ovu_GWOyz9coHYRtlWl4AXbQEKw/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2024/04/29185805/scAU7YudKNVeZlOfgSEWntAUSJ-1-scaled.jpg"
+      },
+      {
+        title: "To All the Boys I've Loved Before", 
+        year: "2018", 
+        url: "https://drive.google.com/file/d/1BvcmhUjhKcDNIvwL4ywMfJcUVzZ5M53z/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjQ3NjM5MTAzN15BMl5BanBnXkFtZTgwODQzMDAwNjM@._V1_.jpg"
+      },
+      {
+        title: "The portable door", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1i5wddvNECfV2QrRluND365tgoprU1uHe/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMWYyMDc3ZjctMGQ2My00ZTNhLWIwNDktMjIzMWMzYTU4MDk1XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "The pod generation", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/19b5Q0jmPN4Wdv_h6pIH-Jv_vhkJXJoMb/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMmI3ZjQ1ZTItODQ1Yy00ODI0LWFjNGUtM2U3OTA2YTY4ZDI0XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "The old guard", 
+        year: "2020", 
+        url: "https://drive.google.com/file/d/1_OvIa43evM1UEXAXckKf24opH-KFwq84/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYzMwNjVjNTEtZDVhOC00NzQzLTg0MGYtMGI1Yzc0Nzg2MjNmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "The old guard 2", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1FZTJ9LXWqMEMl8E5LM8sHMt6ENojwcbi/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZlR-wnRbc0NA6818LE8KKlXiVGf30ecr2uVS5JHzQ3aWc6QNqJkR_RHmGyImlODpzhNuxx4f0q2SW8SXhvqgR1zU46xHLTVMgHmc2vqOVZHvKAHjROALIueuxh8DDGM-cHiQQ.jpg?r=2a5"
+      },
+      {
+        title: "1 Night in Paris (2004)", 
+        year: "2004", 
+        url: "https://drive.google.com/file/d/1QZ9EAHriP6Zny-rCbeCLEgF9aUCuXNCk/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://en-images.kinorium.com/movie/1080/315880.jpg?1508331922"
+      },
+      {
+        title: "Heads of state", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1UxFEsTqoVyZgkY5DyyH-QX7XcYu8LWHD/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYWFmNjg0ZGMtZmI5OC00YTAwLWFiMmMtOWRkNzQ0OTE1YWEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "The Book of Eli", 
+        year: "2010", 
+        url: "https://drive.google.com/file/d/1pccke5-3ilIpurmgs2vxNSeELJBq0XeY/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZjk4N2U2YTAtNWEzZC00N2VmLTlkNDctMjg5YjI4OTExZTFhXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "John Wick", 
+        year: "2014", 
+        url: "https://drive.google.com/file/d/1YyO-AfpBn_75-oxNQu4WS3uWqRXZ-A6J/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_.jpg"
+      },
+      {
+        title: "Rebel Ridge", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/13yAVoZNLOZDPhARigb4YUpel7ATdNQMx/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYTE4ZDE5ZTktZWZkMC00MGY4LWFkZDUtZTc5YWU3NzM2YmM3XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "This time next year", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1KOzT6LqnLFgwlW6WXIN5-gvrF3f5H0eW/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOTk2ZDEyN2EtNzM2YS00Y2VlLWI0MTUtMGFlY2M4MWEwNGNiXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Black Bag", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1WwJe496iQjj7dvPmNnxZljhe5VwMtEI8/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNzA1OWU4NDMtMDUxMC00NWI4LWJhYjUtYWQ0OGQ5MTc2NDRjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Not Without My Daughter", 
+        year: "1991", 
+        url: "https://drive.google.com/file/d/1COtGBTnKm7ZGV2s9zWTMGolsHYPmC311/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://play-lh.googleusercontent.com/2M-Yt0sVbJHRIOynlssB9UB9cvsggZxlTt1biVqSdQILu8DVihbM5expE4aqn1Vc_rs"
+      },
+      {
+        title: "My_Last_Day_Without_You", 
+        year: "2011", 
+        url: "https://drive.google.com/file/d/13ESe4B6SUQ5p9V6N87Mp7EPqjhSKEemA/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQ0NjE0OTA3MV5BMl5BanBnXkFtZTcwNjMwNzkyNQ@@._V1_.jpg"
+      },
+      {
+        title: "X", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1J_gNHzBeDhdFbu4hQz9LM3WunUhbrLCy/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/X_%282022_film%29.jpeg/250px-X_%282022_film%29.jpeg"
+      },
+      {
+        title: "Train to Busen 2 Peninsula", 
+        year: "2020", 
+        url: "https://drive.google.com/file/d/1hpaSO6oQkTOMd3IyAJo9dGtBVxWHzSgn/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNmQzODQyM2UtZjQyYy00ZTQ2LWExZDItYWU2ZGEwM2NjMmIzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "The Vow", 
+        year: "2012", 
+        url: "https://drive.google.com/file/d/1I4vaPjTDWOzMCbLn5BwZSaCjJfiWMzDa/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjE1OTU5MjU0N15BMl5BanBnXkFtZTcwMzI3OTU5Ng@@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "American Fiction", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1DYLjdSdqLmFj9vlgjJXldQ0aPXskTFyE/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLkqXt02lh-dh5wqXmS895QfdJb4Qq8v6PQ&s"
+      },
+      {
+        title: "Bayou caviar", 
+        year: "2018", 
+        url: "https://drive.google.com/file/d/1wTC9fQe1iZzTtDHSWz7-fYCzL80ZiyMk/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAgZgr2LeUvBR7YsRDddHgi_nTbyzNA3UfA&s"
+      },
+      {
+        title: "Moonlight", 
+        year: "2016", 
+        url: "https://drive.google.com/file/d/1FjK4-wHz8Kq_j2GZnzvUsOy__i-2tD6I/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNzQxNTIyODAxMV5BMl5BanBnXkFtZTgwNzQyMDA3OTE@._V1_.jpg"
+      },
+      {
+        title: "Past Lives", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1mC_pHxsoflGg2l5BeIQiOVZJ4yC3Yu6t/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjQyMTNhNjUtN2VmYy00NWRhLTkwOTctMGVmNTBmNDIxYjZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "I Saw the TV Glow", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1nuxGlL8xtdCzhBRUb_Ym09YxFrL5JUAn/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZTA2MGM5M2ItNDBjYi00OWJhLTk1MTMtMGIzMDZlYzg1N2Q3XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Money Shot The Pornhub Story", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1r1aze8PxoB9tdmhuk0KFnV6ZQv3jcBGt/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMmM5NTMwYzgtYTdiZi00ZGY5LTliYmEtY2I5ZGY4ZTcyMGU3XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Only", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/1ayCWwPYlCz_lTOzA23MdyfqhlfqlZiZk/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjIwN2I0ZmQtYmYwYS00ZjVmLWIxYTQtZjVmMTNjZjQwZjc2XkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Train to Busan", 
+        year: "2016", 
+        url: "https://drive.google.com/file/d/1x2AJI8C4Y9b9EsgpzFOIEeTQxxsS7Bh5/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTkwOTQ4OTg0OV5BMl5BanBnXkFtZTgwMzQyOTM0OTE@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "waves", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/1L-sdyQxa60SEu6z6KNdi0NRYIGVTsxA-/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Waves_2019_film_poster.jpg/250px-Waves_2019_film_poster.jpg"
+      },
+      {
+        title: "Violent night", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1J1sudC8hYpJa_sh5DZwrVbcshw-zSISz/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZmE5ODNmODYtNDg0MC00ZDc4LWEyZmItNTQ2MGQ5MGQxMzllXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        title: "Unwelcome", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1BTa87pNEDZZs_X57IREBsE7fR4nV-1kT/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2023/02/21134955/unwelcome-poster1.jpeg"
+      },
+      {
+        title: "The oath", 
+        year: "2018", 
+        url: "https://drive.google.com/file/d/1qySL9HnRfWGYhsFSeEcKR9_73imLpIAU/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/7/78/The_Oath_poster.jpg"
+      },
+      {
+        title: "Resident Evil", 
+        year: "2002", 
+        url: "https://drive.google.com/file/d/1tQWvnuAwgbg66njTV_9yJxQHsSxEOxXW/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYmI3YjJkN2ItY2ZmYS00Y2JhLTk2YTQtYzE5YWU5ODI1MzJmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Snakes on a Plane", 
+        year: "2006", 
+        url: "https://drive.google.com/file/d/1cbEHDw5do_AA69osAyKj7NVsE5PL4wJA/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMThjYjk2MDItYTFiNS00N2I1LTgwYjktMWM4ODFjYTczYmUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Girls trip", 
+        year: "2017", 
+        url: "https://drive.google.com/file/d/1jqQMTvb_VHXC3R3WJHXlLHwUpB0zzFwA/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Only God Forgives", 
+        year: "2013", 
+        url: "https://drive.google.com/file/d/1x2pQcR5MFANmlPt9CGEZCpet-zKTvW65/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMzE5NzcxMTk5NF5BMl5BanBnXkFtZTcwNjE2MDg2OQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        title: "Jungle_Fever", 
+        year: "1991", 
+        url: "https://drive.google.com/file/d/1pBNCTfgxaScojtSDIH_2QYGn3An8dS6G/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://images.moviesanywhere.com/3edf72c6358a055690623d56209acd9b/8929fdd8-a9a8-44ab-9927-351f38753bbd.jpg"
+      },
+      { 
+        title: "How to Have Sex", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/13tVQlXgYP9jme2GZIp-yFiwhdcOOVpCs/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAvgO2AYvrjWQk6qnJME2kKIN-6pYatVZ_w&s"
+      },
+      {  
+        title: "Eve's Bayou", 
+        year: "1997", 
+        url: "https://drive.google.com/file/d/1Ivsj8xZqftG9V_IDmyqOtqNGPIZIK-4j/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMzA4NmEyOWUtYjQ4Yi00MWU1LTk1YTUtZDM2NGVjOTgzYmVkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {  
+        title: "Shame", 
+        year: "2011", 
+        url: "https://drive.google.com/file/d/1OCYm5wcbwcnqBTu5fomSlHAm-bG7waDa/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BM2I4YjYzYmQtNGM4Yy00NmYwLWEzYjUtMDBmNjYzZmViZWE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {  
+        title: "Bad Boys", 
+        year: "1995", 
+        url: "https://drive.google.com/file/d/1EB9wsNW9mnXHF8k3goPxv0J-n_D2xlwv/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Bad_Boys.jpg/250px-Bad_Boys.jpg"
+      },
+      {  
+        title: "The Karate Kid", 
+        year: "2010", 
+        url: "https://drive.google.com/file/d/1IDpvakla_nD-VSWacmSQFZAukkSLMBoY/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/d/d5/Karate_kid_ver2.jpg"
+      },
+      {  
+        title: "The invitation", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1t0yOSmjB9J-_nIIo6ROSOkzqQQsqPg5U/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNjJiN2EzOGUtYTkyYy00NzQ0LWJlNjQtZDYxMTRkN2E0MDg4XkEyXkFqcGc@._V1_.jpg"
+      },
+      {  
+        title: "The First Time", 
+        year: "2012", 
+        url: "https://drive.google.com/file/d/1nK1jzAzm9eHgWaImJthX-YLhXUN0yth5/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/0/0b/The_First_Time_Movie_Poster_2012.jpg"
+      },
+      {  
+        title: "The Equalizer 3", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1_Sln7P2Fk3-ldHd8lRN3d6Hf1P33B3B1/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4fWouvLTAJvbwh1Unl5PP3P3y4NJp4N3zg&s"
+      },
+      {  
+        title: "The Equalizer 2", 
+        year: "2018", 
+        url: "https://drive.google.com/file/d/1Bbn9e2zSTbKGYvQhIrrteEFGY7YK5EMA/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTU2OTYzODQyMF5BMl5BanBnXkFtZTgwNjU3Njk5NTM@._V1_FMjpg_UX1000_.jpg"
+      },
+      {  
+        title: "The Equalizer", 
+        year: "2014", 
+        url: "https://drive.google.com/file/d/1Z6OR8hVCM0vukdRpsUzIarqTKZEANvm5/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTQ2MzE2NTk0NF5BMl5BanBnXkFtZTgwOTM3NTk1MjE@._V1_FMjpg_UX1000_.jpg"
+      },
+      {   
+        
+        title: "Safe house", 
+        year: "2012", 
+        url: "https://drive.google.com/file/d/16DYty7nrZtWk2Oo0wyoLNBc6lJ6YeRTN/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjI5ODkyMjA2Nl5BMl5BanBnXkFtZTcwNTcyNTgzNw@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {         
+        title: "Save the last dance", 
+        year: "2001", 
+        url: "https://drive.google.com/file/d/16rGKs3tdTsVnhfX0vMFJmlBONUumJcea/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTY1ZjVmNTUtZTdmMC00MDdhLThkMGQtZjM3MTAxZWI3M2ViXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Kobe Bryant's Muse", 
+        year: "2015", 
+        url: "https://drive.google.com/file/d/1GudTcK4EkxJdqRXvP5SOnvTHLvRkNU2u/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BY2RjZTBjNjAtNjkzOC00MWMwLThhOWUtYTNmZDgzNTg3YmRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {           
+        title: "Scary movie", 
+        year: "2000", 
+        url: "https://drive.google.com/file/d/1nIA6csrzoLJaDdzgQQ0LkgJIAxkVz0Y/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/2/29/Movie_poster_for_%22Scary_Movie%22.jpg"
+      },
+      {       
+        title: "Lakeview terrace", 
+        year: "2008", 
+        url: "https://drive.google.com/file/d/1YzXhPLI5C4GGEj8ncCeTTBXFXsZkj6zI/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTI0MzI0NDI4Ml5BMl5BanBnXkFtZTcwOTk4ODk3MQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      {         
+        title: "Life in a year", 
+        year: "2020", 
+        url: "https://drive.google.com/file/d/1btpTqYfje4ZliQI_-v-ok2nep2tGBxUR/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOTYxMjRhZWYtZTUyNi00Y2FhLTlmM2UtNjBjOTY3MWYwZjZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {         
+        title: "Love Actually", 
+        year: "2003", 
+        url: "https://drive.google.com/file/d/1cqBF_G7Ibb8ZaZOb-cPDqt2EeC-Molb6/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYWRlZjcwYTgtYWJkOS00MGYwLTk3Y2ItNmU4NTg5Nzg2YTQ2XkEyXkFqcGc@._V1_.jpg"
+      },
+      {         
+        title: "Love and basketball", 
+        year: "2000", 
+        url: "https://drive.google.com/file/d/1x-YXC-7nxtw6mGsFymStqtjiv93o8E8Q/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZmExZDZlZGEtNjBlNy00MjA4LWJjNjYtOWUzOTJmMmM2N2VhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {         
+        title: "Malcolm and Marie", 
+        year: "2021", 
+        url: "https://drive.google.com/file/d/1bnxDKIdx0ALb2td1LOupgQfx8VJEBcpn/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZTc5ZDZjMzMtMDk4MC00N2NlLTg2MjAtOGI5OTcxNzZhMGNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {         
+        title: "Naked", 
+        year: "2017", 
+        url: "https://drive.google.com/file/d/1N3Mu4ateM8XAIonqzmzAyN9V-lYdiY5F/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMDA0M2Y0YjEtMTUwYi00YmYyLWFhNDEtYWY4NTdlNjVlYTIyXkEyXkFqcGc@._V1_.jpg"
+      },
+      {         
+        title: "Nope", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1hv1kTx91x3mXe9UH6SRm-1kWbHCnKQpv/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BODRlNWRhZWUtMzdlZC00ZDIyLWFhZjMtYTcxNjI1ZDIwODhjXkEyXkFqcGc@._V1_.jpg"
+      },
+      {         
+        title: "Nothing to lose", 
+        year: "1997", 
+        url: "https://drive.google.com/file/d/1ax_Z0ehmTgix9EiklPdVpMOTq53ZIRuE/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/3/31/NothingtoLoseMovie.jpg"
+      },
+      {         
+        title: "Obsessed", 
+        year: "2009", 
+        url: "https://drive.google.com/file/d/1tbW8NtC-7kdqbR_MF9Yh59yxUR7N0eX9/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/6/63/Obsessed_2009_film.jpg"
+      },
+      { 
+         title: "Absolute dominion 2025", 
+        year: "1992", 
+        url: "https://drive.google.com/file/d/1hzIVt2UmfmO-WqgOonf2Y-NKdhnKo6aV/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYzZjMDI0MjMtNzUyYS00N2Y4LWFjMWMtMjBkNTZkNDc0YjZlXkEyXkFqcGc@._V1_.jpg"
+      },
+      {  
+        title: "death on the nile", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1Ut51igkulMEz4HeAbDlGzSl2v03aNVsD/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjBkMTRkMmUtNGQ5Ni00YjkwLThhMmMtZjI1M2U2NzRhNjkwXkEyXkFqcGc@._V1_.jpg"
+      },
+      {  
+        title: "Everything, Everything", 
+        year: "2017", 
+        url: "https://drive.google.com/file/d/1eCAxeZOFD68Y9IZbb9DFHFJKnKrzLHTF/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEp07rbqBpmYgpRjNW5SrX8CY8C9Pf_xGpoQ&s"
+      },
+      {  
+        title: "Fat Sick and Nearly Dead", 
+        year: "2011", 
+        url: "https://drive.google.com/file/d/1F0B3wOobcl05wx-s1Fhc2BiA0pu4hlh6/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/5/5f/Fat%2C_Sick_and_Nearly_Dead_%28film%29.jpg"
+      },
+      {  
+        title: "First love", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1sKJzsUa9HC-H5sLojpLsQf5XAA9HrSSA/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMzE0ZDc5YWMtN2U3NC00ZmVhLTkzZGUtMzJmY2IxMTU3M2I4XkEyXkFqcGc@._V1_.jpg"
+      },
+      {  title: "Focus", 
+        year: "2017", 
+        url: "https://drive.google.com/file/d/1aXqahZdxlz-z-bvP5dzOHxDIExt4ojYW/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/b/bf/2015_Focus_film_poster.png"
+      },
+      { 
+        title: "Billion Dollar Bluff", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1Y6NDdTzJoyEqXxzKr9n7CmVtTEqySCgG/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMDllNTA5OTEtNzU0Mi00MDY1LWIwOWMtNzY5MTgyZTdkNDc4XkEyXkFqcGc@._V1_.jpg"
+      },
+      {  
+        title: "Guess who", 
+        year: "2005", 
+        url: "https://drive.google.com/file/d/1Vw_naX74DUaCcVSncUbl0ST6Ka-ECW1t/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNDBjMmI2MjgtMmVlNS00NzgxLTlmYjYtNWM5YzcxMGQwNjhhXkEyXkFqcGc@._V1_.jpg"
+      },
+      {  
+        title: "Hancock", 
+        year: "2008", 
+        url: "https://drive.google.com/file/d/1JeVJh55SMmJLSQP565QZlZPNCDAEa4mZ/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSby9ob1q8JUca62OCgb9Ko0jVzCiDn4S4NUQ&s"
+      },
+      {  
+        title: "Hollywood Stargirl", 
+        year: "2002", 
+        url: "https://drive.google.com/file/d/1nlKv2irFTVojG3XxFn_l0BQWFA80Zxn6/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNDUxOWM5NjgtZDJiZS00NmU1LWIwMzctZDEzZDhkYWRjMDFjXkEyXkFqcGc@._V1_.jpg"
+      },
+      {  
+        title: "How High", 
+        year: "2001", 
+        url: "https://drive.google.com/file/d/1WCmRl8uHqvbEjbSn0be2xavwQYkZ8pXS/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYzFkMDNkMzItZTM4YS00MjAxLWI1OWItMjJjMDI3NTMwNWYwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Coyote Ugly", 
+        year: "2000", 
+        url: "https://drive.google.com/file/d/1KoyikROiNMLe0wI_AJy_qquVDKHXs5rG/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCSA4wpIF0bMQ2kzkIGoMfefHAvBbg0warcA&s"
+      },
+      { 
+        title: "Gabriel Fluffy Iglesias: One Show Fits All", 
+        year: "2019", 
+        url: "https://drive.google.com/file/d/1V6x2-dr7kHLh99RuHgDjlM9311HGXM1S/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjJjMzRmMzItYzgyNS00YWQ4LTg5YmItZWI3NGU1N2Q5OThmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Hip Hop and the White House", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1lxApK8OiM5-WjKW-rBmDL5YYfP96reMv/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMDk5N2NhMDMtY2I5Yy00ZmJkLThjODctMjRjMzhjNTc5MGVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Icahn: The Restless Billionaire", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/15xhKYcwHzENfnvf_cH6_Xv-xPL2XnFKy/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFim74YIxRkwTzAmdTDc8H1hDV-jOIx5LHOQ&s"
+      },
+      { 
+        title: "Love Jones", 
+        year: "1997", 
+        url: "https://drive.google.com/file/d/17yV1767G8olX3RbG6DykEBFlh7HcC9Z0/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://images.moviesanywhere.com/a93a28635ae444a9b43ef46c3f94de2f/28fb107d-4f46-4715-9bf0-72a58dce0baf.jpg"
+      },
+      { 
+        title: "Mr. Crocket", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1BBlvFvE-RWlPVCtR8gtMpwV2k4m1GaGx/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVA437zDjdaCci5iCtG__szj3N34I_63X4Tg&s"
+      },
+      { 
+        title: "The Front Room", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1oswPTEM6xIX0MZoQ_mIe2dPUZcW4x71R/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJVGVSXwKnEpt1WE2AzLMUvZZQQWjn8G9Xvg&s"
+      },
+      { 
+        title: "The Supremes at Earl's All-You-Can-Eat", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1UIAMkTl3pKN18la7RD_JI24p0EwRUJuD/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYmNiYWMwZmYtYjkzZi00NzZjLTlhZTAtZjMzNWZlODBmMjVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "K.O.", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1NFRJzjRUINBQbJp0fn2KooJoY14fRgSt/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNTE0OGZjZWUtZjU3MS00NTRlLTk1ZGMtZGM3NzkzYThiMzM3XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Black Tea", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1Eo5gfettsOgq5pwcXqftlfbXaUZoCPt7/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYWEzZjM2YjAtZTk3YS00NzkzLWJiYTAtNTQ0OGQ4MmZkMDc3XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Blade", 
+        year: "1998", 
+        url: "https://drive.google.com/file/d/1S-WCetCH-M8LxLPKcI4cJo-OB28SPRG7/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMGE5ZmY2NzEtZTEyMi00MWIyLThmOWYtYzJkOTQ0Y2U3ZWU1XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Blue Lagoon", 
+        year: "1980", 
+        url: "https://drive.google.com/file/d/1adIqg3a_-0N6ud0lACqtiLKtRk-Vf2Q9/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/3/32/Blue_lagoon_1980_movie_poster.jpg"
+      },
+      { 
+        title: "California King", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1sjVrJQ9U2EurmO6K-edSS-56aqXfLQVw/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF99MyiejtUtag_URIRq6OsyZES7ADjazudQ&s"
+      },
+      { 
+        title: "Foxy Brown", 
+        year: "1974", 
+        url: "https://drive.google.com/file/d/1CFvOH3LpuwXp87OKS_xH2TP2s4YA3Cw-/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv9QzDMqhyUbFg464YfB42YXbQGT0Cwu8pmg&s"
+      },
+      { 
+        title: "Invictus", 
+        year: "2009", 
+        url: "https://drive.google.com/file/d/1QYsBqvlZlFrIIPgo9QWM43t5JmAuO1qV/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjAyMzExMDM1N15BMl5BanBnXkFtZTcwNTcyMTQ5Mg@@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Malcolm X", 
+        year: "1992", 
+        url: "https://drive.google.com/file/d/1cIMedG8r-34p7eAVtIv-tgCDpriW-y6j/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi85T1EWrzgwrJc9CGsiWJ-yAkjwdVyX1c_A&s"
+      },
+      { 
+        title: "Origin", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/17P_ugyI1B0rg-FHl2WhIGcGnhDLPNIX4/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mq6LzzkZWEJ9QdGUMwCydEOYjhVJc3m8lg&s"
+      },
+      { 
+        title: "Soul", 
+        year: "2020", 
+        url: "https://drive.google.com/file/d/1PcuzkmzNTGnQsBpg8DrOigDlz33tPN7F/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS91NDm8GIGVHE3bTrduyexVL1DHR3qN_FrMg&s"
+      },
+      { 
+        title: "Straw", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1dgCuK_AJkAPg0KMqeYPFwZCU97CNYPUJ/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1Q4e3BgdY7SwiMoVuk6KWA3RwLkMCVkLRw&s"
+      },
+      { 
+        title: "The Autobiography of Miss Jane Pittman", 
+        year: "1974", 
+        url: "https://drive.google.com/file/d/1RQJmL3ku3Sjn2PNY1IblQOODwhMHuRkv/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDm00UkNI5CEmzVhWCDMg1CO_qV4Zddd8dtg&s"
+      },
+      { 
+        title: "Amsterdam", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1OXJDBvhdJ6WjwVVelQ16k2prXKxRrQrn/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNDQwNzE0ZTItYmZjMC00NjI3LWFlNzctNTExZDY2NWE0Zjc0XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Barbarian", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1TDh2-32YW71r9duHgtlJyikEtPDbN5vT/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://resizing.flixster.com/Ym6ucXdlZjGTqRWEMVr0r3H16Ro=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzA3ZGY2MjgxLTI1NjEtNGFhMC1iYzQ0LTllOGFhYTczNzYxNy5qcGc="
+      },
+      { 
+        title: "Batman", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1mnh3rFhszbSp1a3EOqDJTipTyj0a8t0E/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Becoming Michelle Obama", 
+        year: "2020", 
+        url: "https://drive.google.com/file/d/1zxf_WQQ9VRBIIu0cudkzmNV1yR7bU8Ah/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://i0.wp.com/finessetosuccess.com/wp-content/uploads/2020/05/Becoming-Netflix-Poster.jpeg?resize=1000%2C608&ssl=1"
+      },
+      { 
+        title: "A Minecraft Movie", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1Y19enaxtjjBTHrUxsu5V8yvJMNZp6PTS/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/A_Minecraft_Movie_poster.jpg/250px-A_Minecraft_Movie_poster.jpg"
+      },
+      { 
+        title: "In the Lost Lands", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1nugd4bimUcc2Tfg8A_wEuhL6x8Z6AbkB/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOWYxYjEyYTUtY2FkZC00Y2QwLTk1ZjMtMTAyMTAyMzQ3MDZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Havoc", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/11fDlbQ3LYqxIfUe9_55Qw6yvEB2z2jwK/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZWJjMjdhNGEtZjEyMi00OTg2LTllMzQtN2JlZWNjYzI4YzFhXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Death of a Unicorn", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1BCu3FS_R9nKzEJBEUu2zTU3ayywgsrIQ/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNjUzMjhkZjktNTU5Mi00MzhmLWJhMTQtZjhkYjczOTEzM2M5XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Captain America Brave New World", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1YOiq6HTj6vp32hLruAFwnSXVEoAs8Tqq/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://musicart.xboxlive.com/7/3d0c6e00-0000-0000-0000-000000000002/504/image.jpg"
+      },
+      { 
+        title: "A Working Man", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1enEbMq4sgoEs6RcIUW_A2UXc99BFueZz/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYmQxZGIxNTYtYTQwMy00ODdkLWI0MmQtM2E0ZmIyNmYzMGMzXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Bones and All", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1LyyBbQrGdYYU6NNHnraLPgPQd3IMtKNg/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjUzMWU0ZTEtMjlhYy00YWEwLTlhOTktNzNkMTlhNGNiYmRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Boiler Room", 
+        year: "2002", 
+        url: "https://drive.google.com/file/d/1xpirkq-MN009knCkL2SJbXUIx_P1zJNX/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p24891_p_v12_ah.jpg"
+      },
+      { 
+        title: "Beyonce Lemonade", 
+        year: "2016", 
+        url: "https://upload.wikimedia.org/wikipedia/en/3/3b/Beyonce_Lemonade.jpg", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/3/3b/Beyonce_Lemonade.jpg"
+      },
+      { 
+        title: "The Monkey", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1VNhlwyiTbG9-5iiTVA14TdwD5q9bdBhx/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMDIxYzI0OGQtZTZmZS00ZDU5LWI0Y2YtNzc5ZTk2NzMwMDM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Borat", 
+        year: "2006", 
+        url: "https://drive.google.com/file/d/13S8PEPuuqs3nWWZtBQZM_ntfXrhoakMu/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTk0MTQ3NDQ4Ml5BMl5BanBnXkFtZTcwOTQ3OTQzMw@@._V1_.jpg"
+      },
+      { 
+        title: "The Actor", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1innBRr5qlXDidnUoglZhthFTgHPHgQmK/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMWM1OTQ3MjAtNDQzZC00ZDE3LWJkYWEtOTQxZTM0ZGM3YWNmXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Snow White", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/16s3wgjAcgpk62Mko70fC3kpk3U3hg5jT/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Snow_White_%282025_film%29_final_poster.jpg/250px-Snow_White_%282025_film%29_final_poster.jpg"
+      },
+      { 
+        title: "Opus", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1eH05pPVCjnvPceqgtJxCKfEJkfq87T4U/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNjgzMzczNmItMWEwOC00NjE0LWEwMGMtNjQ2NWY5ZjRkMDYzXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "ODessa", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1CpdSOjZvS3EJxLRjXi2AaPuPJqAOyuEc/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZTAyMjBmY2EtY2MxOC00ZWEwLTg0ZWMtMjlkZWJlZjQ1MjRmXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Magazine Dreams", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1Pn071sCdYsHHcSG9T2Ja4BdpawaZfeId/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNTBkYjk0YzMtNDAwYy00ZTU4LTg2MGUtZWVjNzFiZmE3NzUzXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "My Fault London", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1LAvW5-2H5NJj5-fhoeuYE28efMNa0JaA/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BN2MzOTJiOTItODBjOS00MjVhLWFiOWQtOTVjOTAyM2NkODM2XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Coming to America", 
+        year: "1988", 
+        url: "https://drive.google.com/file/d/1g-LPX-iHSi6q3sR63XQD-ecakM9xUayt/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMDY1N2RiYWMtMTNmMy00MWQzLTlkYzAtYzRlZmM5OGZhMjUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Contagion", 
+        year: "2011", 
+        url: "https://drive.google.com/file/d/1YdFWDgBIMmjOTvGctsBS7gKWHmnxMAMH/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTY3MDk5MDc3OV5BMl5BanBnXkFtZTcwNzAyNTg0Ng@@._V1_.jpg"
+      },
+      { 
+        title: "Challengers", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1NvUTaaouRlKOt1NBufUketeBzAvI9O2z/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZTcyZGIyODctZGJhOS00MWUyLWI5ZWEtMjg4YzhkMDczMDBhXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Central Intelligence", 
+        year: "2016", 
+        url: "https://drive.google.com/file/d/1pb2jr3UTQ1VBUm7lXOiWJxqyZY782QNx/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjA2NzEzNjIwNl5BMl5BanBnXkFtZTgwNzgwMTEzNzE@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Cadillac Records", 
+        year: "2008", 
+        url: "https://drive.google.com/file/d/12GjFJkbvcif4br6YUnPO-HU32R1Gwj_J/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/0/01/Cadillac_records_poster.jpg"
+      },
+      { 
+        title: "Bruce Almighty", 
+        year: "2003", 
+        url: "https://drive.google.com/file/d/1Rzs7wxEs25RBIqGutT8r9v2PXY6GXipc/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BZWM2ZjA2OTctZmRhMy00ZDIzLTkwZGQtYTRlNmQwZWZmMDBlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Get Out", 
+        year: "2016", 
+        url: "https://drive.google.com/file/d/1cP6MniniiDVSLQvG44e4G2iugkGvtQPk/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/I/81l6wfzojiL._AC_UF894,1000_QL80_.jpg"
+      },
+      { 
+        title: "Entergalactic", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1JYOjHgcJBiPlQ-i-jhfZ2YU9NWxoak6J/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://resizing.flixster.com/Jba-safOmWN3iLRIPVcDJwoYTZw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzUyZDRiYTg0LTI5ZTktNDUzZS1iYjhiLWMwNzIyMDBhNDQzMC5qcGc="
+      },
+      { 
+        title: "Death at a Funeral", 
+        year: "2010", 
+        url: "https://drive.google.com/file/d/1n18z90qkyxB0kaGwGlwkRVA2Va4ta5rn/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTYzMDQxODE0NF5BMl5BanBnXkFtZTcwODE0MDk0Mw@@._V1_.jpg"
+      },
+      { 
+        title: "Dear Basketball", 
+        year: "2017", 
+        url: "https://drive.google.com/file/d/1sHWOEhixlQ6Q3cMAQMff8E3TL-Jm9lDk/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/e/e6/Dear-Basketball.jpg"
+      },
+      { 
+        title: "Dangerous Lies", 
+        year: "2021", 
+        url: "https://drive.google.com/file/d/1KBaW16hSXnKrs6OCHssXK5m1RyD2FE0K/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYWNhYmRlMTEtMTNlNi00NzYxLWEyM2ItNjI0MzFhMzU4ODQzXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Creed 2", 
+        year: "2018", 
+        url: "https://drive.google.com/file/d/1vUieZz5Zr4In1YaZMhLcN3efQnvRKtyl/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTBmYTg3YTItZjUzYi00MGU2LThiNDUtMDA3NjNmMTFiYzZkXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Creed 3", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/12gQgIn5a9_BWlh0V_WgnrVvGyChvTCB0/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIg7U8ULyKfK5HNXVAMAA41_aAtIr62tfMGQ&s"
+      },
+      { 
+        title: "Creed", 
+        year: "2015", 
+        url: "https://drive.google.com/file/d/1XeAMwwzc6SiI7u0orghzEbtUwuh8HEUS/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNWM3NjY2ZDctMGZiYy00OGFlLThkMTktOTY2MDM2YjE2OTliXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Brown Sugar", 
+        year: "2002", 
+        url: "https://drive.google.com/file/d/11bdcKkGOjB0S2RVpl3aU7388BpHHnb6d/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/4/40/Brown_sugar_poster.jpg"
+      },
+      { 
+        title: "Bagman", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1OvjeAexObfkLO1OgrCvMrbZFr7bWRHr7/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYzAwMDllN2UtMDk0My00YWEwLWJhNGUtOGEzYzYwNmZjMzE2XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Blade Runner Black Out", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1M21usfSm8n93BLcVPEqUCYAzuQnBk0x1/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYTA4OTNmNDEtYzIyNS00OTE4LWJiODctM2RmOTA3YzdmMTZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "A Complete Unknown", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1sOzc93cRu4FdZQmDSgMCixi0AElgT8AX/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYTA2NTA5NDYtMzlkOC00MTQxLWI0NDQtMzk2M2YzMGE4MTkxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "The Luckiest Man in America", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1QweV29ls_w-Q4Tg4hJHjy4WSoBX4kaC7/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNWI2MmZmZjUtYTRhYi00ZWVhLWEwZjYtYjgwMGI4NDg2YzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Kendrick Lamar Live The Big Steppers Tour", 
+        year: "2022", 
+        url: "https://drive.google.com/file/d/1jHmuWxSR9PdmxvCOrJe7D_xX7BRS0-e2/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/6/69/Kendrick_Lamar_Live_Steppers_Poster.jpg"
+      },
+      { 
+        title: "I Am Legend", 
+        year: "2006", 
+        url: "https://drive.google.com/file/d/15rH0Vtn2GaZG15YsKQPp_Qkickas2EGx/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/I_am_legend_teaser.jpg/250px-I_am_legend_teaser.jpg"
+      },
+      { 
+        title: "Dr. Bird's Advice for Sad Poets", 
+        year: "2021", 
+        url: "https://drive.google.com/file/d/19dFcsE57bPOje0cPHyRcVXfxp1r0E1Pv/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYTAyZGJiMjktNTE0ZC00YTI5LThjY2YtMDhkNDNkZDFiYjY5XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Strange Darling", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1IsADDfOPIdxZXp44gyOVaTdvk6JIkNCX/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNDE2OTQ0NjEtNmEwMC00NmRjLThiOGMtN2M1N2Q2YWY0NGY4XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Never Let Go", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1TKP9l-nslAj30xwokbKQlr_3HtKBuKrk/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYzM4Mzk1YjctMWFkYi00ZDdkLTk2MmQtMmExZDNlNGEyMjBjXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Meet the Browns", 
+        year: "2008", 
+        url: "https://drive.google.com/file/d/1AfioZv9G3QSrExxvZX58MGLiUnOiShkm/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTIyNTgyMjgxMF5BMl5BanBnXkFtZTcwMjc3NzI2MQ@@._V1_.jpg"
+      },
+      { 
+        title: "Attack the Block", 
+        year: "2011", 
+        url: "https://drive.google.com/file/d/1OnhPStBGagxz2V__6yas_uDooLmcdBZF/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMjAzNjc1MjgzOF5BMl5BanBnXkFtZTcwMzE3Njk5NQ@@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Laid in America", 
+        year: "2016", 
+        url: "https://drive.google.com/file/d/1GcEfhlP5mb7FLLsqxZxGhAsRikNEW-Ml/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOWIyODRhZGMtNTU1MS00M2ZlLWIzMTQtYmVkMzBhZmNjNTExXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Katt Williams Woke Foke", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1SKHJ4ooDFcwzc-eDDpq6X8a8ET7FwhHz/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNmIzZDYxNDktMjJhMC00MzgwLTgzYjMtMmM4MTI0MWEwYzk0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Cry Freedom", 
+        year: "1987", 
+        url: "https://drive.google.com/file/d/1GCFi6mUv4pUPE3AqHuck0Pjb9T-s1acU/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BYjJkMWQyMzctZGQ5ZS00YWM3LWI2OWQtNjIxNzNlMWY3YzY2XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "A Nightmare on Elm Street", 
+        year: "2010", 
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJeRbB5tusOANaNL-juPWa8P24jWzpe2X4A&s", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BODIxMTQ0NTIxM15BMl5BanBnXkFtZTcwMzY1NDAyMw@@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "A United Kingdom", 
+        year: "2017", 
+        url: "https://drive.google.com/file/d/1aXNXRaS0bn5V2_wL-IRUoQM8MY_QiAWK/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/4/4e/A_United_Kingdom_poster.jpg"
+      },
+      { 
+        title: "Umlazi Gangstar", 
+        year: "2010", 
+        url: "https://drive.google.com/file/d/1LvRf3wc_QmPqWyQtZTIw4fjgZAdH0Qbz/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://i.ytimg.com/vi/hKT_ouVWRBw/hqdefault.jpg"
+      },
+      { 
+        title: "Shadow Force", 
+        year: "2025", 
+        url: "https://drive.google.com/file/d/1EpHbrXhUG0lIz26HjHKYDWHg6wzLODJo/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMTUyZTUyOTMtOGU5OC00MmM1LTk0NWUtMjNlMTU4ZTkwMDRjXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Freaky Tales", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/15qTPNerTsumS4BMfRxBxlcNmwrYttXD1/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOTYyNmYyN2EtYTFjNS00ZWY5LWJiZmMtNTk5N2MyYzkzMDhmXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Bird", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1rv8ghGB3tNb7eRRcgNA-YIB7CvkgHXSI/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BMGYzZDI4OTktZWJkZC00NjdiLTlkMjYtMzA1ZTVjMDU2M2FhXkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Uglies", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1rsx6R6sweT8Qh55hoJXICT4glhm4uZTC/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BOGEyYmQxNjQtNDlkYy00MDlkLTgyNDUtZDA0NGY3ZTNlZWU0XkEyXkFqcGc@._V1_.jpg"
+      },
+      { 
+        title: "Wasp", 
+        year: "2024", 
+        url: "https://drive.google.com/file/d/1pUR-N9EOP0_Thz6vbekv1vG9qhTHn_XI/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://m.media-amazon.com/images/M/MV5BNzE1YTljYTgtNzczZi00NTAyLThkYjUtYWExZDU4ZTY5YTdlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      { 
+        title: "Air", 
+        year: "2023", 
+        url: "https://drive.google.com/file/d/1nrvPvVYbPFOnM6E1US3aQgHtq-PONRHY/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://pmdoc.ua/wp-content/uploads/air.jpg"
+      },
+      { 
+        title: "Belle", 
+        year: "2013", 
+        url: "https://drive.google.com/file/d/1Zhqc91jNSFW3vpaER2U-V4UcEgovF9F2/uc?export=download", 
+        type: "movie",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/en/0/0f/Belle_poster.jpg"
+      },
+      
+      // TV Series
+      { 
+        title: "Skeem Saam", 
+        year: "2023", 
+        url: "https://tvyami.blogspot.com/search/label/skeemsaam", 
+        type: "series",
+        thumbnail: "https://i.mydramalist.com/1wY0Q_4f.jpg"
+      },
+      { 
+        title: "Ithonga", 
+        year: "2023", 
+        url: "https://tvyami.blogspot.com/search/label/ithonga", 
+        type: "series",
+        thumbnail: "https://i.mydramalist.com/1wY0Q_4f.jpg"
+      },
+      { 
+        title: "Genesis", 
+        year: "2023", 
+        url: "https://tvyami.blogspot.com/search/label/genesis", 
+        type: "series",
+        thumbnail: "https://i.mydramalist.com/1wY0Q_4f.jpg"
+      },
+      { 
+        title: "Xrepo", 
+        year: "2023", 
+        url: "https://tvyami.blogspot.com/search/label/xrepo", 
+        type: "series",
+        thumbnail: "https://i.mydramalist.com/1wY0Q_4f.jpg"
+      }
+    ];
+
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase();
+      searchResults.innerHTML = '';
+      
+      if (query.length < 2) {
+        searchResults.style.display = 'none';
+        return;
+      }
+      
+      const results = contentDatabase.filter(item => 
+        item.title.toLowerCase().includes(query) || 
+        (item.year && item.year.includes(query)) ||
+        item.type.includes(query)
+      );
+      
+      if (results.length > 0) {
+        results.forEach(item => {
+          const resultItem = document.createElement('div');
+          resultItem.className = 'search-result-item';
+          resultItem.innerHTML = `
+            <strong>${item.title}</strong> ${item.year ? `(${item.year})` : ''} - ${item.type}
+          `;
+          resultItem.addEventListener('click', () => {
+            if (item.url.includes('youtube.com') || item.url.includes('drive.google.com')) {
+              openModal(item.url, `${item.title} ${item.year ? `(${item.year})` : ''}`);
+            } else {
+              window.open(item.url, '_blank');
+            }
+            searchResults.style.display = 'none';
+            searchInput.value = '';
+          });
+          searchResults.appendChild(resultItem);
+        });
+        searchResults.style.display = 'block';
+      } else {
+        const noResults = document.createElement('div');
+        noResults.className = 'search-result-item';
+        noResults.textContent = 'No results found';
+        searchResults.appendChild(noResults);
+        searchResults.style.display = 'block';
+      }
+    });
+
+    // Close search results when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
+        searchResults.style.display = 'none';
+      }
+    });
+
+    // Modal functions
+    let currentVideoIndex = 0;
+    const videoUrls = contentDatabase.filter(item => 
+      item.url.includes('youtube.com') || item.url.includes('drive.google.com')
+    ).map(item => ({
+      url: item.url,
+      title: `${item.title} ${item.year ? `(${item.year})` : ''}`
+    }));
+
+    function openModal(videoUrl, videoTitle = '') {
+      const modal = document.getElementById('videoModal');
+      const modalVideo = document.getElementById('modalVideo');
+      const videoTitleElement = document.getElementById('currentVideoTitle');
+      
+      currentVideoIndex = videoUrls.findIndex(item => item.url === videoUrl);
+      modalVideo.src = videoUrl;
+      videoTitleElement.textContent = videoTitle;
+      modal.style.display = "block";
+      document.body.style.overflow = "hidden";
+    }
+
+    function playNextVideo() {
+      currentVideoIndex = (currentVideoIndex + 1) % videoUrls.length;
+      const nextVideo = videoUrls[currentVideoIndex];
+      document.getElementById('modalVideo').src = nextVideo.url;
+      document.getElementById('currentVideoTitle').textContent = nextVideo.title;
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('videoModal');
+      const modalVideo = document.getElementById('modalVideo');
+      modalVideo.src = "";
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      const modal = document.getElementById('videoModal');
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+
+    // Carousel functionality
+    let currentCarouselIndex = 0;
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    const carouselInner = document.querySelector('.carousel-inner');
+
+    function moveCarousel(direction) {
+      currentCarouselIndex += direction;
+      
+      if (currentCarouselIndex < 0) {
+        currentCarouselIndex = carouselItems.length - 1;
+      } else if (currentCarouselIndex >= carouselItems.length) {
+        currentCarouselIndex = 0;
+      }
+      
+      carouselInner.style.transform = `translateX(-${currentCarouselIndex * 100}%)`;
+    }
+
+    // Auto-rotate carousel
+    setInterval(() => {
+      moveCarousel(1);
+    }, 5000);
+
+    // Make search work on Enter key
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        const query = this.value.toLowerCase();
+        if (query.length > 0) {
+          const results = contentDatabase.filter(item => 
+            item.title.toLowerCase().includes(query) || 
+            (item.year && item.year.includes(query)) ||
+            item.type.includes(query)
+          );
+          
+          if (results.length > 0) {
+            if (results[0].url.includes('youtube.com') || results[0].url.includes('drive.google.com')) {
+              openModal(results[0].url, `${results[0].title} ${results[0].year ? `(${results[0].year})` : ''}`);
+            } else {
+              window.open(results[0].url, '_blank');
+            }
+          }
+          searchResults.style.display = 'none';
+        }
+      }
+    });
+
+    // Ad fallback handling
+    window.addEventListener('load', function() {
+      const adContainers = document.querySelectorAll('.ad-container');
+      adContainers.forEach(container => {
+        const iframes = container.getElementsByTagName('iframe');
+        if (iframes.length === 0) {
+          const fallback = container.querySelector('.ad-fallback');
+          if (fallback) fallback.style.display = 'block';
+        }
+      });
+    });
+
+    // Movies pagination
+    const moviesPerPage = 20;
+    let currentPage = 1;
+    const moviesContainer = document.getElementById('moviesContainer');
+    const paginationContainer = document.getElementById('pagination');
+
+    function displayMovies(page) {
+      moviesContainer.innerHTML = '';
+      const start = (page - 1) * moviesPerPage;
+      const end = start + moviesPerPage;
+      const moviesToShow = contentDatabase
+        .filter(item => item.type === 'movie')
+        .slice(start, end);
+      
+      moviesToShow.forEach(movie => {
+        const movieItem = document.createElement('div');
+        movieItem.className = 'movie-item';
+        movieItem.innerHTML = `
+          <div class="thumbnail-container" style="height: 250px;">
+            <img src="${movie.thumbnail}" alt="${movie.title}" 
+                 onerror="this.src='https://via.placeholder.com/300x450?text=No+Thumbnail'">
+            <div class="play-button"></div>
+          </div>
+          <div class="movie-title">${movie.title} ${movie.year ? `(${movie.year})` : ''}</div>
+        `;
+        movieItem.onclick = () => openModal(movie.url, `${movie.title} ${movie.year ? `(${movie.year})` : ''}`);
+        moviesContainer.appendChild(movieItem);
+      });
+      
+      // Update pagination buttons
+      updatePagination();
+    }
+
+    function updatePagination() {
+      const totalMovies = contentDatabase.filter(item => item.type === 'movie').length;
+      const totalPages = Math.ceil(totalMovies / moviesPerPage);
+      
+      paginationContainer.innerHTML = '';
+      
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = 'page-btn';
+        if (i === currentPage) pageBtn.classList.add('active');
+        pageBtn.textContent = i;
+        pageBtn.onclick = () => {
+          currentPage = i;
+          displayMovies(currentPage);
+        };
+        paginationContainer.appendChild(pageBtn);
+      }
+    }
+
+    // Series pagination
+    const seriesPerPage = 10;
+    let currentSeriesPage = 1;
+    const seriesContainer = document.getElementById('seriesContainer');
+    const seriesPagination = document.getElementById('seriesPagination');
+
+    function displaySeries(page) {
+      seriesContainer.innerHTML = '';
+      const start = (page - 1) * seriesPerPage;
+      const end = start + seriesPerPage;
+      const seriesKeys = Object.keys(seriesDatabase).slice(start, end);
+      
+      seriesKeys.forEach(seriesId => {
+        const series = seriesDatabase[seriesId];
+        const previewItem = document.createElement('div');
+        previewItem.className = 'preview-item';
+        previewItem.innerHTML = `
+          <div class="thumbnail-container" style="height: 250px;">
+            <img src="${series.poster}" alt="${series.title}" class="preview-thumbnail"
+                 onerror="this.src='https://via.placeholder.com/300x450?text=No+Thumbnail'">
+            <div class="play-button"></div>
+          </div>
+          <div class="preview-title">${series.title}</div>
+        `;
+        previewItem.onclick = (e) => showSeasons(seriesId, e);
+        seriesContainer.appendChild(previewItem);
+      });
+      
+      // Update series pagination buttons
+      updateSeriesPagination();
+    }
+
+    function updateSeriesPagination() {
+      const totalSeries = Object.keys(seriesDatabase).length;
+      const totalPages = Math.ceil(totalSeries / seriesPerPage);
+      
+      seriesPagination.innerHTML = '';
+      
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = 'page-btn';
+        if (i === currentSeriesPage) pageBtn.classList.add('active');
+        pageBtn.textContent = i;
+        pageBtn.onclick = () => {
+          currentSeriesPage = i;
+          displaySeries(currentSeriesPage);
+        };
+        seriesPagination.appendChild(pageBtn);
+      }
+    }
+
+    // All videos function
+    function showAllVideos() {
+      const allVideosSection = document.getElementById('allVideosSection');
+      const allVideosContainer = document.getElementById('allVideosContainer');
+      
+      // Hide other sections
+      document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+      });
+      
+      // Show all movies section
+      allVideosSection.style.display = 'block';
+      
+      // Clear previous results
+      allVideosContainer.innerHTML = '';
+      
+      // Filter only movies (exclude series if needed)
+      const moviesOnly = contentDatabase.filter(item => item.type === 'movie');
+      
+      // Sort A-Z and create video items
+      moviesOnly.sort((a,b) => a.title.localeCompare(b.title))
+        .forEach(video => {
+          const videoItem = document.createElement('div');
+          videoItem.className = 'all-videos-item';
+          
+          videoItem.innerHTML = `
+            <div class="thumbnail-container" style="height: 250px;">
+              <img src="${video.thumbnail}" alt="${video.title}" 
+                   onerror="this.src='https://via.placeholder.com/300x450?text=No+Thumbnail'">
+              <div class="play-button"></div>
+            </div>
+            <div class="movie-title">${video.title} ${video.year ? `(${video.year})` : ''}</div>
+          `;
+          
+          videoItem.onclick = () => openModal(video.url, `${video.title} ${video.year ? `(${video.year})` : ''}`);
+          allVideosContainer.appendChild(videoItem);
+        });
+    }
+
+    // Initialize movies and series display
+    displayMovies(currentPage);
+    displaySeries(currentSeriesPage);
+  </script>
+</body>
+</html>
